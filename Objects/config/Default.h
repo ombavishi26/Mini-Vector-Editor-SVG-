@@ -25,4 +25,8 @@ namespace Default{
         constexpr float x2 = 10.0;
         constexpr float y2 = 10.0;
     }
+
+    namespace path{
+        constexpr const char* d = "M150 5 L75 200 L225 200 Z";
+    }
 }
