@@ -1,3 +1,4 @@
+#pragma once
 #include "GraphicsObject.h"
 
 class line : public GraphicsObject {

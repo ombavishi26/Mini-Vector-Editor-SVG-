@@ -1,3 +1,4 @@
+#pragma once
 #include "GraphicsObject.h"
 // namespace def = Default;
 // namespace defcircle = Default::circle;

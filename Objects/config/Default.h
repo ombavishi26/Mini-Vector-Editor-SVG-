@@ -1,3 +1,4 @@
+#pragma once
 // #include <string>
 namespace Default{
     constexpr const char* stroke = "black";
