@@ -5,7 +5,7 @@ class GraphicsObject {
 private:
     std::string stroke;
     std::string fill;
-    float strokeWidth;
+    float strokewidth;
 
 public:
     // Constructor
@@ -14,5 +14,9 @@ public:
     // Destructor
     ~GraphicsObject();
     // Print properties
-    void printProperties() const;
-}
+    void print_properties() const;
+    //getter
+    std::string get_stroke();
+    std::string get_fill();
+    float get_strokewidth();
+};
