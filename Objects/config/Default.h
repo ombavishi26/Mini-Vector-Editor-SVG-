@@ -19,7 +19,7 @@ namespace Default{
         constexpr float cy = 0.0;
     }
     
-    namespace linr{
+    namespace line{
         constexpr float x1 = 0.0;
         constexpr float y1 = 0.0;
         constexpr float x2 = 10.0;
