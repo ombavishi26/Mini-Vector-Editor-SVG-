@@ -1,11 +1,12 @@
 #include "GraphicsObject.h"
 
 using obj = GraphicsObject;
+// using namespace a = Default;;
 
 //Constructor
 obj::GraphicsObject(const std::string& strokeColor, const std::string& fillColor, float sw)
     : stroke(strokeColor), fill(fillColor), strokewidth(sw) {}
-obj::GraphicsObject() : stroke("black"), fill("none"), strokewidth(1.0f) {}
+obj::GraphicsObject() : stroke(Default::stroke), fill(Default::fill), strokewidth(Default::strokewidth) {}
 
 // Destructor
 obj::~GraphicsObject() {}
@@ -21,7 +22,7 @@ std::string obj::get_fill() {return fill;}
 float obj::get_strokewidth () {return strokewidth;}
 
 //to svg
-std::string obj::to_svg() const {};
+std::string obj::to_svg() const {return "we are in Graphicsobject";};
 
 // int main() {
 //     GraphicsObject defaultObj;

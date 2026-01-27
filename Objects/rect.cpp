@@ -13,8 +13,27 @@ void rect::print_properties() const{
 }
 //to svg
 std::string rect::to_svg() const {
-    std::string s ="<rect ";
-    
+    std::string str ="<rect ";
+    if(width != Default::rect::width){
+        str += "width=\"" + std::to_string(width) + "\" ";
+    }
+    if (height != Default::rect::height){
+        str += "height=\"" + std::to_string(height) + "\" ";
+    }
+    if (x != Default::rect::x){
+        str += "x=\"" + std::to_string(x) + "\" ";
+    }
+    if (y != Default::rect::y){
+        str += "y=\"" + std::to_string(y) + "\" ";
+    }
+    if (rx != Default::rect::rx){
+        str += "rx=\"" + std::to_string(rx) + "\" ";
+    }
+    if (ry != Default::rect::ry){
+        str += "ry=\"" + std::to_string(ry) + "\" ";
+    }  
+    str += "/>";
+    return str;
 }
 
 int main (){
