@@ -1,9 +1,11 @@
-all:
-	g++ -std=c++17 GraphicsObject.cpp rect.cpp -o obj
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra 
 
+all:
+	$(CXX) $(CXXFLAGS) GraphicsObject.cpp $(FILE).cpp -o $(FILE)
 
 run : all
-	./obj
+	./$(FILE)
 
 clean:
-	rm -f obj
+	rm -f $(FILE)
