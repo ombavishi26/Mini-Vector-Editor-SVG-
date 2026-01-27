@@ -17,9 +17,9 @@ public:
     // Print properties
     void print_properties() const;
     //getter
-    std::string get_stroke();
-    std::string get_fill();
-    float get_strokewidth();
+    std::string get_stroke() const;
+    std::string get_fill() const;
+    float get_strokewidth() const;
     //to svg
     virtual std::string to_svg() const;
 };

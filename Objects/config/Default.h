@@ -11,5 +11,12 @@ namespace Default{
         constexpr float y = 0.0;
         constexpr float rx = 0.0;
         constexpr float ry = 0.0;
-    } 
+    }
+
+    namespace circle{
+        constexpr float r = 10.0;
+        constexpr float cx = 0.0;
+        constexpr float cy = 0.0;
+    }
+    
 }

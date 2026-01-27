@@ -17,9 +17,9 @@ void obj::print_properties() const {
 }
 
 //getter
-std::string obj::get_stroke() {return stroke;}
-std::string obj::get_fill() {return fill;}
-float obj::get_strokewidth () {return strokewidth;}
+std::string obj::get_stroke() const {return stroke;}
+std::string obj::get_fill() const {return fill;}
+float obj::get_strokewidth () const {return strokewidth;}
 
 //to svg
 std::string obj::to_svg() const {return "we are in Graphicsobject";};

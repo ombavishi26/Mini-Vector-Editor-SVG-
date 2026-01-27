@@ -1,9 +1,12 @@
 #include "rect.h"
+namespace def = Default;
+namespace defrect = Default::rect;
+using obj = GraphicsObject;
 
-rect::rect() : GraphicsObject(),width(10.0f), height(10.0f), x(0.0f), y(0.0f), rx(0.0f), ry(0.0f) {};
+rect::rect() : GraphicsObject(),width(defrect::width), height(defrect::height), x(defrect::x), y(defrect::y), rx(defrect::rx), ry(defrect::ry) {};
 rect::rect(const float w, const float h, const float x, const float y, const float rx, const float ry,
-           const std::string& strokeColor, const std::string& fillColor, const float sw) 
-           : GraphicsObject(strokeColor, fillColor, sw), width(w), height(h), x(x), y(y), rx(rx), ry(ry) {};
+           const std::string& strokeColor, const std::string& fill, const float sw) 
+           : GraphicsObject(strokeColor, fill, sw), width(w), height(h), x(x), y(y), rx(rx), ry(ry) {};
 //destructor
 rect::~rect() {};
 //print properties
@@ -32,15 +35,26 @@ std::string rect::to_svg() const {
     if (ry != Default::rect::ry){
         str += "ry=\"" + std::to_string(ry) + "\" ";
     }  
+    if (obj::get_stroke() != def::stroke){
+        str += "stroke=\"" + obj::get_stroke() + "\" ";
+    }
+    if (obj::get_fill() != def::fill){
+        str += "fill=\"" + obj::get_fill() + "\" ";
+    }
+    if (obj::get_strokewidth() != def::strokewidth){
+        str += "stroke_width=\"" + std::to_string(obj::get_strokewidth()) + "\" ";
+    }
     str += "/>";
     return str;
 }
 
 int main (){
-    rect defrect;
+    rect defaultrect;
     rect rec(12,11,2,3,4,5,"red","orange");
-    defrect.print_properties();
+    defaultrect.print_properties();
     rec.print_properties();
+    std::cout << defaultrect.to_svg() << std::endl;
+    std::cout << rec.to_svg() << std::endl;
     return 0;
 }
 
