@@ -13,4 +13,6 @@ public:
     ~rect();
     //print properties
     void print_properties() const;
+    //to svg
+    std::string to_svg() const;
 };

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>   
+#include "config/Default.h"
 
 class GraphicsObject {
 private:
@@ -19,4 +20,6 @@ public:
     std::string get_stroke();
     std::string get_fill();
     float get_strokewidth();
+    //to svg
+    virtual std::string to_svg() const;
 };

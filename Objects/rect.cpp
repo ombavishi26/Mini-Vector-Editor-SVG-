@@ -11,6 +11,12 @@ void rect::print_properties() const{
     std::cout << width << " " << height << " " << x << " " << y << " " << rx << " " << ry << " " ;
     GraphicsObject::print_properties();   
 }
+//to svg
+std::string rect::to_svg() const {
+    std::string s ="<rect ";
+    
+}
+
 int main (){
     rect defrect;
     rect rec(12,11,2,3,4,5,"red","orange");

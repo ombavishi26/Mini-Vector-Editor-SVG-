@@ -19,6 +19,10 @@ void obj::print_properties() const {
 std::string obj::get_stroke() {return stroke;}
 std::string obj::get_fill() {return fill;}
 float obj::get_strokewidth () {return strokewidth;}
+
+//to svg
+std::string obj::to_svg() const {};
+
 // int main() {
 //     GraphicsObject defaultObj;
 //     defaultObj.printProperties(); // Should print: black none 1
