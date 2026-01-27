@@ -4,9 +4,8 @@ namespace defrect = Default::rect;
 using obj = GraphicsObject;
 
 rect::rect() : GraphicsObject(),width(defrect::width), height(defrect::height), x(defrect::x), y(defrect::y), rx(defrect::rx), ry(defrect::ry) {};
-rect::rect(const float w, const float h, const float x, const float y, const float rx, const float ry,
-           const std::string& strokeColor, const std::string& fill, const float sw) 
-           : GraphicsObject(strokeColor, fill, sw), width(w), height(h), x(x), y(y), rx(rx), ry(ry) {};
+rect::rect(const float w, const float h, const float x, const float y, const float rx, const float ry, const std::string& stroke, const std::string& fill, const float sw) 
+           : GraphicsObject(stroke, fill, sw), width(w), height(h), x(x), y(y), rx(rx), ry(ry) {};
 //destructor
 rect::~rect() {};
 //print properties
@@ -14,7 +13,7 @@ void rect::print_properties() const{
     std::cout << width << " " << height << " " << x << " " << y << " " << rx << " " << ry << " " ;
     GraphicsObject::print_properties();   
 }
-//to svg
+//to svg return the svg syntax for rect
 std::string rect::to_svg() const {
     std::string str ="<rect ";
     if(width != Default::rect::width){
