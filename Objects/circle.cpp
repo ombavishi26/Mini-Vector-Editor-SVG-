@@ -33,7 +33,7 @@ std::string circle::to_svg() const{
         str += "fill=\"" + obj::get_fill() + "\" ";
     }
     if (obj::get_strokewidth() != def::strokewidth){
-        str += "stroke_width=\"" + std::to_string(obj::get_strokewidth()) + "\" ";
+        str += "stroke-width=\"" + std::to_string(obj::get_strokewidth()) + "\" ";
     }
     str += "/>";
     return str;

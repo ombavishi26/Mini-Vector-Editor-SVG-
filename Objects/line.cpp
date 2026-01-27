@@ -34,7 +34,7 @@ std::string line::to_svg() const {
         str += "stroke=\"" + obj::get_stroke() + "\" ";
     }
     if (obj::get_strokewidth() != def::strokewidth){
-        str += "stroke_width=\"" + std::to_string(obj::get_strokewidth()) + "\" ";
+        str += "stroke-width=\"" + std::to_string(obj::get_strokewidth()) + "\" ";
     }
     str += "/>";
     return str;
