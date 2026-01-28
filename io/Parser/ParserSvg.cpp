@@ -16,10 +16,6 @@ void parser_initial(const std::string& line, int i){
     }
 }
 
-
-
-
-
 std::vector<GraphicsObject*> load_svg (const std::string& filename){
     std::ifstream file(filename);
     std::vector<GraphicsObject*> objects;
@@ -63,6 +59,6 @@ std::vector<GraphicsObject*> load_svg (const std::string& filename){
 };
 
 int main(){
-    std::vector<GraphicsObject*> objects = load_svg("output.svg");
+    std::vector<GraphicsObject*> objects = load_svg("../output.svg");
     return 0;
 }

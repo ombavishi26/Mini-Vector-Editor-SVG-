@@ -1,4 +1,5 @@
 #include "ParserSvg.h"
+// using objcir = GraphicsObject::circle;
 
 //parsing circle line of svg syntax
 circle* parser_circle(const std::string& line,int pos,int i){
@@ -31,5 +32,6 @@ circle* parser_circle(const std::string& line,int pos,int i){
             return nullptr;
         }
     }
+    cir->print_properties();
     return cir;
 }
