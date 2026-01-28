@@ -30,4 +30,14 @@ namespace Default{
     namespace path{
         constexpr const char* d = "M150 5 L75 200 L225 200 Z";
     }
+
+    namespace text{
+        constexpr float x = 0.0;
+        constexpr float y = 0.0;
+        constexpr float dx = 0.0;
+        constexpr float dy = 0.0;
+        constexpr int font_size = 12;
+        constexpr const char* content = "def content of text";
+        constexpr float rotate = 5;
+    }
 }
