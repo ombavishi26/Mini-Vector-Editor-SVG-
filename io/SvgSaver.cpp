@@ -2,11 +2,12 @@
 
 void svg_saver(const std::string& filename, std::vector<GraphicsObject*>& objects){
     std::ofstream file(filename);
+    //Checking for correctly open file
     if (!file.is_open()) {
         std::cerr << "Error:Could not open file " << filename << std::endl;
         return;
     }
-    file << "<svg width=\"200\" height=\"200\" xmlns=\"http://www.w3.org/2000/svg\">" << std::endl;
+    file << "<svg width=\"200\" height=\"200\" xmlns=\"http://www.w3.org/2000/svg\" >" << std::endl;
     // std::vector<GraphicsObject*> objects_copy = objects;
     objects.erase(std::remove(objects.begin(),objects.end(), nullptr), objects.end());
     for (int i = 0; i < objects.size(); ++i){
