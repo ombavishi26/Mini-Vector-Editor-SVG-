@@ -7,13 +7,21 @@ using obj = GraphicsObject;
 circle::circle() : GraphicsObject(), r(defcircle::r), cx(defcircle::cx), cy(defcircle::cy) {};
 circle::circle(const float r, const float cx, const float cy, const std::string& stroke, const std::string& fill, const float sw) 
            : GraphicsObject(stroke, fill, sw), r(r), cx(cx), cy(cy) {};
+
 //destructor
 circle::~circle() {};
+
 //print properties
 void circle::print_properties() const {
     std::cout << r << " " << cx << " " << cy << " ";
     GraphicsObject::print_properties();
 }
+
+//setter
+void circle::set_r(const float r){this->r = r;}
+void circle::set_cx(const float cx){this->cx = cx;}
+void circle::set_cy(const float cy){this->cy = cy;}
+
 //to svg return the svg syntax for circle
 std::string circle::to_svg() const{
     std::string str = "<circle ";

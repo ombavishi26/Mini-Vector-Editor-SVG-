@@ -7,13 +7,19 @@ using obj = GraphicsObject;
 path::path() : GraphicsObject(), d(defpath::d) {};
 path::path(const std::string& d, const std::string& stroke, const std::string& fill, const float sw) 
            : GraphicsObject(stroke, fill, sw), d(d) {};
+
 //destructor
 path::~path() {};
+
 //print properties
 void path::print_properties() const {
     std::cout << d << " ";
     GraphicsObject::print_properties();   
 }
+
+//setter
+void path::set_d(const std::string& d){this->d = d;}
+
 //to svg return the svg syntax for path
 std::string path::to_svg() const {
     std::string str = "<path ";;

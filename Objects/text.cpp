@@ -7,6 +7,7 @@ namespace deftext = Default::text;
 text::text() : GraphicsObject() , x(deftext::x),y(deftext::y),dx(deftext::dx),dy(deftext::dy),rotate(deftext::rotate),font_size(deftext::font_size) , content(deftext::content) {};
 text::text(const float x,const float y,const float dx,const float dy,const float rotate, const int font_size, const std::string& content,const std::string& stroke,const std::string& fill, const float sw) 
         : GraphicsObject(stroke,fill,sw) , x(x),y(y),dx(dx),dy(dy),rotate(rotate),font_size(font_size),content(content) {};
+
 //destructor
 text::~text() {};
 
@@ -15,6 +16,15 @@ void text::print_properties() const {
     std::cout << x << ' ' << y << ' ' << dx << ' ' << dy << ' ' << rotate << ' ' << font_size << ' ' << content << ' ';
     obj::print_properties();
 }
+
+//setter
+void text::set_x(const float x){this->x = x;}
+void text::set_y(const float y){this->y = y;}
+void text::set_dx(const float dx){this->dx = dx;}
+void text::set_dy(const float dy){this->dy = dy;}
+void text::set_rotate(const float rotate){this->rotate = rotate;}
+void text::set_font_size(const int font_size){this->font_size = font_size;}
+void text::set_content(const std::string& content){this->content = content;}
 
 //to_svg return string for svg sntax of font 
 std::string text::to_svg() const{
