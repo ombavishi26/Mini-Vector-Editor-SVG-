@@ -21,15 +21,22 @@ std::string obj::get_stroke() const {return stroke;}
 std::string obj::get_fill() const {return fill;}
 float obj::get_strokewidth () const {return strokewidth;}
 
+//setter
+void obj::set_stroke(const std::string stroke){this->stroke = stroke;}
+void obj::set_fill(const std::string fill){this->fill = fill;}
+void obj::set_sw(const float sw){obj::strokewidth = sw;}
+
 //to svg
 std::string obj::to_svg() const {return "we are in Graphicsobject";};
 
 // int main() {
 //     GraphicsObject defaultObj;
-//     defaultObj.printProperties(); // Should print: black none 1
+//     defaultObj.set_fill("om");
+//     defaultObj.print_properties(); // Should print: black none 1
 
 //     GraphicsObject customObj("red", "blue", 2.5f);
-//     customObj.printProperties(); // Should print: red blue 2.5
+//     customObj.set_sw(93.224);
+//     customObj.print_properties(); // Should print: red blue 2.5
 
 //     return 0;
 // }
