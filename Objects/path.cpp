@@ -33,12 +33,12 @@ std::string path::to_svg() const {
     return str;
 }
 
-int main(){
-    path defuaktpath;
-    path pa("M10 10 H 90 V 90 H 10 L 10 10","red","blue",2.0);
-    defuaktpath.print_properties();
-    pa.print_properties();
-    std::cout << defuaktpath.to_svg() << std::endl;
-    std::cout << pa.to_svg() << std::endl;
-    return 0;
-}
+// int main(){
+//     path defuaktpath;
+//     path pa("M10 10 H 90 V 90 H 10 L 10 10","red","blue",2.0);
+//     defuaktpath.print_properties();
+//     pa.print_properties();
+//     std::cout << defuaktpath.to_svg() << std::endl;
+//     std::cout << pa.to_svg() << std::endl;
+//     return 0;
+// }

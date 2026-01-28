@@ -50,12 +50,12 @@ std::string text::to_svg() const{
     return str;
 }
 
-int main(){
-    text defuakttext;
-    text tx(10.0,20.0,5.0,5.0,15.0,16,"Hello, SVG!","red","blue",2.0);
-    defuakttext.print_properties();
-    tx.print_properties();
-    std::cout << defuakttext.to_svg() << std::endl;
-    std::cout << tx.to_svg() << std::endl;
-    return 0;
-}
+// int main(){
+//     text defuakttext;
+//     text tx(10.0,20.0,5.0,5.0,15.0,16,"Hello, SVG!","red","blue",2.0);
+//     defuakttext.print_properties();
+//     tx.print_properties();
+//     std::cout << defuakttext.to_svg() << std::endl;
+//     std::cout << tx.to_svg() << std::endl;
+//     return 0;
+// }

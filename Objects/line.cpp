@@ -40,12 +40,12 @@ std::string line::to_svg() const {
     return str;
 }
 
-int main(){
-    line defuaktline;
-    line lin(0.0,0.0,50.0,100.0,"red",2.0);
-    defuaktline.print_properties();
-    lin.print_properties();
-    std::cout << defuaktline.to_svg() << std::endl;
-    std::cout << lin.to_svg() << std::endl;
-    return 0;
-}
+// int main(){
+//     line defuaktline;
+//     line lin(0.0,0.0,50.0,100.0,"red",2.0);
+//     defuaktline.print_properties();
+//     lin.print_properties();
+//     std::cout << defuaktline.to_svg() << std::endl;
+//     std::cout << lin.to_svg() << std::endl;
+//     return 0;
+// }

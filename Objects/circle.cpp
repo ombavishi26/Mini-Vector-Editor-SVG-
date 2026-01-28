@@ -39,12 +39,12 @@ std::string circle::to_svg() const{
     return str;
 }
 
-int main(){
-    circle defuaktcircle;
-    circle cir(15.0,50.0,100.0,"red","none",2.0);
-    defuaktcircle.print_properties();
-    cir.print_properties();
-    std::cout << defuaktcircle.to_svg() << std::endl;
-    std::cout << cir.to_svg() << std::endl;
-    return 0;
-}
+// int main(){
+//     circle defuaktcircle;
+//     circle cir(15.0,50.0,100.0,"red","none",2.0);
+//     defuaktcircle.print_properties();
+//     cir.print_properties();
+//     std::cout << defuaktcircle.to_svg() << std::endl;
+//     std::cout << cir.to_svg() << std::endl;
+//     return 0;
+// }

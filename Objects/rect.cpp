@@ -47,15 +47,15 @@ std::string rect::to_svg() const {
     return str;
 }
 
-int main (){
-    rect defaultrect;
-    rect rec(12,11,2,3,4,5,"red","orange");
-    defaultrect.print_properties();
-    rec.print_properties();
-    std::cout << defaultrect.to_svg() << std::endl;
-    std::cout << rec.to_svg() << std::endl;
-    return 0;
-}
+// int main (){
+//     rect defaultrect;
+//     rect rec(12,11,2,3,4,5,"red","orange");
+//     defaultrect.print_properties();
+//     rec.print_properties();
+//     std::cout << defaultrect.to_svg() << std::endl;
+//     std::cout << rec.to_svg() << std::endl;
+//     return 0;
+// }
 
 // <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
 
