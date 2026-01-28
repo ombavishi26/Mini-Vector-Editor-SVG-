@@ -14,6 +14,13 @@ public:
     ~rect();
     //print properties
     void print_properties() const;
+    //setter
+    void set_width(const float width);
+    void set_height(const float height);
+    void set_x(const float x);
+    void set_y(const float y);
+    void set_rx(const float rx);
+    void set_ry(const float ry);
     //to svg
     std::string to_svg() const override;
 };
