@@ -26,7 +26,7 @@ circle* parser_circle(const std::string& input ,int pos,int i){
             cir->set_sw(std::stof(attribute.second));
         }
         else {
-            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << "' for circle." << std::endl;
+            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << std::endl;
             delete cir;
             exit(1);
             return nullptr;

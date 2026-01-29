@@ -19,7 +19,7 @@ path* parser_path (const std::string& input , int pos, int i){
             p->set_sw(std::stof(attribute.second));
         }
         else {
-            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << "' for path." << std::endl;
+            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << std::endl;
             delete p;
             exit(1);
             return nullptr;

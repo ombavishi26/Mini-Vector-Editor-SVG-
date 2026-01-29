@@ -34,7 +34,7 @@ rect* parser_rect (const std::string& input , int pos, int i){
             rec->set_sw(std::stof(attribute.second));
         }
         else {
-            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << "' for rect." << std::endl;
+            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << std::endl;
             delete rec;
             exit(1);
             return nullptr;

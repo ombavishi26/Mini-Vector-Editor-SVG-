@@ -25,7 +25,7 @@ line* parser_line (const std::string& input , int pos, int i){
             lin->set_sw(std::stof(attribute.second));
         }
         else {
-            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << "' for line." << std::endl;
+            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << std::endl;
             delete lin;
             exit(1);
             return nullptr;
