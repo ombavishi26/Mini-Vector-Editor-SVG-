@@ -49,6 +49,14 @@ std::vector<GraphicsObject*> load_svg (const std::string& filename){
         if (obj_type == "circle"){
             parser_circle(line,pos_s+1,err_index);
         }
+        else if (obj_type == "rect"){
+            parser_rect(line,pos_s+1,err_index);
+        }
+        // else {
+        //     std::cerr << "Error at line " << err_index << ": unknown object type '" << obj_type << "'." << std::endl;
+        //     exit(1);
+        //     return objects;
+        // }
 
         std::getline(file,line);
         err_index ++;

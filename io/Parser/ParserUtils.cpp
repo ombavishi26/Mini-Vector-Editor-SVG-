@@ -2,7 +2,7 @@
 
 //helper function to seperate properties and their values from a line
 //used for rect,circle,line,path
-std::vector<std::pair<std::string,std::string>> seperate (const std::string& line,int pos , int i){
+std::vector<std::pair<std::string,std::string>> seperate (const std::string& line,int pos){
     std::vector<std::pair<std::string,std::string>> properties;
     while (line.substr(pos,2) != "/>"){
         std::pair<std::string,std::string> attribute;

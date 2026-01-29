@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra
 
 OBJS = ../../Objects/GraphicsObject.o ../../Objects/rect.o ../../Objects/circle.o ../../Objects/line.o ../../Objects/path.o ../../Objects/text.o
 
-PAR = ParserSvg.o ParserCircle.o ParserUtils.o
+PAR = ParserSvg.o ParserCircle.o ParserUtils.o ParserRect.o
 
 check: $(PAR) $(OBJS)
 	$(CXX) $(PAR) $(OBJS) -o ParserSvg
@@ -16,6 +16,9 @@ ParserCircle.o: ParserCircle.cpp
 
 ParserUtils.o: ParserUtils.cpp
 	$(CXX) $(CXXFLAGS) -c ParserUtils.cpp
+
+ParserRect.o : ParserRect.cpp	
+	$(CXX) $(CXXFLAGS) -c ParserRect.cpp
 
 clean:
 	rm -f ParserSvg.o ParserCircle.o ParserUtils.o ParserSvg

@@ -4,9 +4,9 @@
 //parsing circle line of svg syntax
 circle* parser_circle(const std::string& line,int pos,int i){
     std::vector<std::pair<std::string,std::string>> properties;
-    properties = seperate (line,pos,i); 
+    properties = seperate (line,pos); 
     circle* cir = new circle();
-    for(auto attribute : properties){
+    for(const auto& attribute : properties){
         if (attribute.first == "r"){
             cir->set_r(std::stof(attribute.second));
         }
