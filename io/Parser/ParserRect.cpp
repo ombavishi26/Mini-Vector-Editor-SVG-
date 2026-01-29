@@ -1,8 +1,9 @@
 #include "ParserSvg.h"
 
-rect* parser_rect (const std::string& line , int pos, int i){
+//parsing rect line of svg syntax
+rect* parser_rect (const std::string& input , int pos, int i){
     std::vector<std::pair<std::string,std::string>> properties;
-    properties = seperate (line,pos); 
+    properties = seperate (input,pos); 
     rect* rec = new rect();
     for (const auto& attribute : properties){
         if (attribute.first == "width"){

@@ -13,8 +13,10 @@ void parser_initial(const std::string& line,int i);
 std::vector<std::pair<std::string,std::string>> seperate (const std::string& line,int pos );
 
 //parsing rec line of syntax 
-rect* parser_rect(const std::string& line,int pos, int i);
-//parsing circle line and gi
-circle* parser_circle(const std::string& line , int pos, int i);
+rect* parser_rect(const std::string& input,int pos, int i);
+//parsing circle line and return pointer of ciircle
+circle* parser_circle(const std::string& input, int pos, int i);
+//parsing line and return pointer of line
+line* parser_line (const std::string& input , int pos, int i);
 
 std::vector<GraphicsObject*> load_svg (const std::string& filename);
