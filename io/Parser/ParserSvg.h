@@ -18,5 +18,7 @@ rect* parser_rect(const std::string& input,int pos, int i);
 circle* parser_circle(const std::string& input, int pos, int i);
 //parsing line and return pointer of line
 line* parser_line (const std::string& input , int pos, int i);
+//parsing path and return pointer of path
+path* parser_path (const std::string& input , int pos, int i);
 
 std::vector<GraphicsObject*> load_svg (const std::string& filename);
