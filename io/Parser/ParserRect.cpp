@@ -40,6 +40,6 @@ rect* parser_rect (const std::string& input , int pos, int i){
             return nullptr;
         }
     }
-    rec->print_properties();
+    // rec->print_properties();
     return rec;
 }

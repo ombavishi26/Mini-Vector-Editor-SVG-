@@ -14,7 +14,7 @@ path::~path() {};
 //print properties
 void path::print_properties() const {
     std::cout << d << " ";
-    GraphicsObject::print_properties();   
+    GraphicsObject::print_properties();  
 }
 
 //setter

@@ -31,6 +31,6 @@ line* parser_line (const std::string& input , int pos, int i){
             return nullptr;
         }
     }
-    lin->print_properties();
+    // lin->print_properties();
     return lin;
 }

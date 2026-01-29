@@ -4,7 +4,7 @@
 //used for rect,circle,line,path
 std::vector<std::pair<std::string,std::string>> seperate (const std::string& line,int pos){
     std::vector<std::pair<std::string,std::string>> properties;
-    while (line.substr(pos,2) != "/>"){
+    while (size_t(pos+2) < line.length() && line.substr(pos,2) != "/>"){
         std::pair<std::string,std::string> attribute;
 
         //finding pos of = so between is property
@@ -31,7 +31,7 @@ std::vector<std::pair<std::string,std::string>> seperate_text (const std::string
     std::vector<std::pair<std::string,std::string>> properties;
     std::pair<std::string,std::string> attribute;
 
-    while (line.substr(pos,1) != ">"){
+    while (size_t(pos+2) < line.length() && line.substr(pos,1) != ">"){
 
         //finding pos of = so between is property
         int pos_equal = line.find('=',pos);
@@ -52,7 +52,7 @@ std::vector<std::pair<std::string,std::string>> seperate_text (const std::string
 
     //getting text content
     int pos_end = line.find("</text>");
-    if(pos_end == std::string::npos){
+    if(line.find("</text>") == std::string::npos){
         throw std::runtime_error("Error: </text> not found");
         exit(1);
     }

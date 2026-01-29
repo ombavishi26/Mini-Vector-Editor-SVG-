@@ -15,6 +15,7 @@ rect::~rect() {};
 void rect::print_properties() const{
     std::cout << width << " " << height << " " << x << " " << y << " " << rx << " " << ry << " " ;
     GraphicsObject::print_properties();   
+    // std::cout << std::endl;
 }
 //setter
 void rect::set_width(const float width){this->width = width;}

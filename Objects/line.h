@@ -12,10 +12,10 @@ public:
     line(const float x1, const float y1, const float x2, const float y2, const std::string& stroke=Default::stroke,const float sw = Default::strokewidth);
 
     //destructor
-    ~line();
+    ~line() override;
 
     //print properties
-    void print_properties() const;
+    void print_properties() const override;
 
     //setter
     void set_x1(const float x1);

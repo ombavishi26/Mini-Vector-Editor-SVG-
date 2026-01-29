@@ -13,7 +13,12 @@ obj::~GraphicsObject() {}
 
 //print properties
 void obj::print_properties() const {
-    std::cout << stroke << " " << fill << " " << strokewidth << std::endl; 
+    // std::cout << "DEBUG: About to print stroke" << std::endl;
+    std::cout << stroke << " ";
+    // std::cout << "DEBUG: About to print fill" << std::endl;
+    std::cout << fill << " ";
+    // std::cout << "DEBUG: About to print strokewidth" << std::endl;
+    std::cout << strokewidth << std::endl;
 }
 
 //getter
@@ -22,8 +27,8 @@ std::string obj::get_fill() const {return fill;}
 float obj::get_strokewidth () const {return strokewidth;}
 
 //setter
-void obj::set_stroke(const std::string stroke){this->stroke = stroke;}
-void obj::set_fill(const std::string fill){this->fill = fill;}
+void obj::set_stroke(const std::string& stroke){this->stroke = stroke;}
+void obj::set_fill(const std::string& fill){this->fill = fill;}
 void obj::set_sw(const float sw){obj::strokewidth = sw;}
 
 //to svg

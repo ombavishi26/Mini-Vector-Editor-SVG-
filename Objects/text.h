@@ -13,10 +13,10 @@ public:
     text(const float x,const float y,const float dx,const float dy,const float rotate, const int font_size, const std::string& content,const std::string& stroke,const std::string& fill, const float sw);
 
     //destructor
-    ~text();
+    ~text() override;
 
     //print properties
-    void print_properties() const;
+    void print_properties() const override;
 
     //setter
     void set_x(const float x);

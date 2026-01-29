@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra 
 OBJS = GraphicsObject.o rect.o circle.o line.o path.o text.o
 
-all : main
+all : $(OBJS)
 
 main : 
 	$(CXX) $(OBJS) -o Objects 

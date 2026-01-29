@@ -31,7 +31,7 @@ std::vector<GraphicsObject*> load_svg (const std::string& filename){
     //reading first line 
     std::string line;
     std::getline(file,line); 
-    std::cout << line << std::endl; 
+    // std::cout << line << std::endl; 
     parser_initial(line,err_index);
 
     //do something till line is not last line ehich is </svg>
@@ -44,23 +44,23 @@ std::vector<GraphicsObject*> load_svg (const std::string& filename){
         }
         int pos_s = line.find(' ');
         std::string obj_type = line.substr(1,pos_s-1);
-        std::cout << line << std::endl;
-        std::cout << obj_type << std::endl;
+        // std::cout << line << std::endl;
+        // std::cout << obj_type << std::endl;
         if (obj_type == "circle"){
-            parser_circle(line,pos_s+1,err_index);
+            objects.push_back(parser_circle(line,pos_s+1,err_index));
         }
         else if (obj_type == "rect"){
-            parser_rect(line,pos_s+1,err_index);
+            objects.push_back(parser_rect(line,pos_s+1,err_index));
         }
         else if (obj_type == "line"){
-            parser_line(line,pos_s+1,err_index);
+            objects.push_back(parser_line(line,pos_s+1,err_index));
         }
         else if (obj_type == "path"){
-            parser_path(line,pos_s+1,err_index);
+            objects.push_back(parser_path(line,pos_s+1,err_index));
         }
         else if (obj_type == "text"){
             // seperate_text(line,pos_s+1);
-            parser_text(line,pos_s+1,err_index);
+            objects.push_back(parser_text(line,pos_s+1,err_index));
         }
         else {
             std::cerr << "Error at line " << err_index << ": unknown object type '" << obj_type << std::endl;
@@ -77,6 +77,10 @@ std::vector<GraphicsObject*> load_svg (const std::string& filename){
 };
 
 int main(){
-    std::vector<GraphicsObject*> objects = load_svg("../output.svg");
+    std::vector<GraphicsObject*> objects = load_svg("output.svg");
+    for (const auto& obj : objects) {
+        obj->print_properties();
+        // delete obj; // Free allocated memory
+    }
     return 0;
 }

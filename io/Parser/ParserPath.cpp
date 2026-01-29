@@ -25,6 +25,6 @@ path* parser_path (const std::string& input , int pos, int i){
             return nullptr;
         }
     }
-    p->print_properties();
+    // p->print_properties();
     return p;
 }

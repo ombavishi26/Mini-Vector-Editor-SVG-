@@ -27,11 +27,11 @@ circle* parser_circle(const std::string& input ,int pos,int i){
         }
         else {
             std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << std::endl;
-            delete cir;
+            // delete cir;
             exit(1);
-            return nullptr;
+            // return nullptr;
         }
     }
-    cir->print_properties();
+    // cir->print_properties();
     return cir;
 }

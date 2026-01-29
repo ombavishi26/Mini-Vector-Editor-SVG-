@@ -43,6 +43,6 @@ text* parser_text(const std::string& input ,int pos,int i){
             return nullptr;
         }
     }
-    t->print_properties();
+    // t->print_properties();
     return t;
 }

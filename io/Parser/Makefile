@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra
+CXXFLAGS = -g -std=c++17 -Wall -Wextra
 
 OBJS = ../../Objects/GraphicsObject.o ../../Objects/rect.o ../../Objects/circle.o ../../Objects/line.o ../../Objects/path.o ../../Objects/text.o
 
@@ -30,4 +30,4 @@ ParserText.o : ParserText.cpp
 	$(CXX) $(CXXFLAGS) -c ParserText.cpp
 	
 clean:
-	rm -f ParserSvg.o ParserCircle.o ParserUtils.o ParserSvg
+	rm -f $(PAR) ParserSvg

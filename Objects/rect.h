@@ -11,9 +11,9 @@ public:
     rect(const float w, const float h, const float x, const float y, const float rx, const float ry,
          const std::string& stroke=Default::stroke, const std::string& fill=Default::fill, const float sw = Default::strokewidth);
     //destructor
-    ~rect();
+    ~rect() override;
     //print properties
-    void print_properties() const;
+    void print_properties() const override;
     //setter
     void set_width(const float width);
     void set_height(const float height);

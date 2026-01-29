@@ -54,5 +54,7 @@ std::string circle::to_svg() const{
 //     cir.print_properties();
 //     std::cout << defuaktcircle.to_svg() << std::endl;
 //     std::cout << cir.to_svg() << std::endl;
+//     GraphicsObject* p = &cir;
+//     p->print_properties();
 //     return 0;
 // }
