@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+312c2773cb156c2c8cac8bc0adb4864e CMakeFiles/vector_editor_autogen
+312c2773cb156c2c8cac8bc0adb4864e CMakeFiles/vector_editor_autogen_timestamp_deps
+0a565626bb8cc07fe2df0861b2a98428 vector_editor_autogen/timestamp

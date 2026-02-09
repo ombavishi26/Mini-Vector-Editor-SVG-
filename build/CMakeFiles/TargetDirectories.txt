@@ -1,0 +1,5 @@
+/home/om/main/COP290/mini_vector_editor/build/CMakeFiles/vector_editor.dir
+/home/om/main/COP290/mini_vector_editor/build/CMakeFiles/edit_cache.dir
+/home/om/main/COP290/mini_vector_editor/build/CMakeFiles/rebuild_cache.dir
+/home/om/main/COP290/mini_vector_editor/build/CMakeFiles/vector_editor_autogen_timestamp_deps.dir
+/home/om/main/COP290/mini_vector_editor/build/CMakeFiles/vector_editor_autogen.dir

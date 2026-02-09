@@ -76,11 +76,11 @@ std::vector<GraphicsObject*> load_svg (const std::string& filename){
     return objects;
 };
 
-int main(){
-    std::vector<GraphicsObject*> objects = load_svg("output.svg");
-    for (const auto& obj : objects) {
-        obj->print_properties();
-        // delete obj; // Free allocated memory
-    }
-    return 0;
-}
+// int main(){
+//     std::vector<GraphicsObject*> objects = load_svg("output.svg");
+//     for (const auto& obj : objects) {
+//         obj->print_properties();
+//         // delete obj; 
+//     }
+//     return 0;
+// }
