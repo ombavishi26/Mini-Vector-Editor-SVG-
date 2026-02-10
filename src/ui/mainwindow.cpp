@@ -1,9 +1,9 @@
 #include "mainwindow.h"
 
-MainWindow::MainWindow() {
+MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     setWindowTitle("Mini Vector Editor");
     resize (800, 600);
-    canvas = new QWidget(this);
+    canvas = new Canvas(this);
     setCentralWidget(canvas);
 
     fileMenu = menuBar() -> addMenu("File");
