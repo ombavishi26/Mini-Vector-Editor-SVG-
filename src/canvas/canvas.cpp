@@ -82,3 +82,23 @@ void Canvas::paintEvent(QPaintEvent*){
         painter.drawRect(current->bounding_rect());
     }    
 }
+
+//style objects
+void Canvas::setStrokeWidth(float w){
+    if (current){
+        current->set_sw(w);
+        update();
+    }
+}
+void Canvas::setFillColor(const std::string& color){
+    if (current){
+        current->set_fill(color);
+        update();
+    }
+}
+void Canvas::setStrokeColor(const std::string& color){
+    if (current){
+        current->set_stroke(color);
+        update();
+    }
+}

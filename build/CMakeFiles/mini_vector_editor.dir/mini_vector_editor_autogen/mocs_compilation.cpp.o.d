@@ -376,4 +376,15 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QColorDialog \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcolordialog.h

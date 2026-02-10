@@ -72,7 +72,7 @@ std::string Rect::to_svg() const {
 void Rect::draw(QPainter& painter) const {
     painter.setPen(QPen(QColor(obj::get_stroke().c_str()), obj::get_strokewidth()));
     painter.setBrush(QBrush(QColor(obj::get_fill().c_str())));
-    painter.drawRect(x, y, width, height);
+    painter.drawRoundedRect(x, y, width, height, rx, ry);
 }
 
 //update width and height while forming

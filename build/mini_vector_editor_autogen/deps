@@ -385,6 +385,7 @@ mini_vector_editor_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
@@ -411,17 +412,27 @@ mini_vector_editor_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QColorDialog \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolBar \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcolordialog.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h \

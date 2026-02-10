@@ -5,6 +5,8 @@
 #include <QMenuBar>
 #include <QMenu>
 #include "../canvas/canvas.h"
+#include <QInputDialog>
+#include <QColorDialog>
 
 class MainWindow : public QMainWindow {
 private:
@@ -13,7 +15,10 @@ private:
     QToolBar* toolbar;
     QMenu* fileMenu;
     QAction* rectAction;
-    
+    QAction* fillAction;
+    QAction* strokeAction;
+    QAction* strokeWidthAction;
+
 public:
     MainWindow(QWidget* parent);
     ~MainWindow() override = default;

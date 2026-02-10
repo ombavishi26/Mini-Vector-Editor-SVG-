@@ -31,4 +31,8 @@ public:
     Canvas(QWidget* parent);
     ~Canvas() = default;
     void setRectMode(bool toogle);
+    //style objects
+    void setStrokeWidth(float w);
+    void setFillColor(const std::string& color);
+    void setStrokeColor(const std::string& color);
 };
