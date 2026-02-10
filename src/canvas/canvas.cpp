@@ -5,8 +5,18 @@
 Canvas::Canvas(QWidget* parent) : QWidget(parent) {
     currenttool = None;
     drawing = false;
+    current = nullptr;
+    setCursor(Qt::ArrowCursor);
+    setMouseTracking(true);
 }
 
+//create onjects
+GraphicsObject* Canvas::create_shape(ToolType type, const QPoint& start){
+    if (type == Rectangle){
+        return new Rect(0,0,start.x(),start.y(),0,0,"black","none",1);
+    }
+    return nullptr;
+}
 //setting rect if rect pressed in toolbar
 void Canvas::setRectMode (bool toogle){
     if (toogle){currenttool = Rectangle;update();}
@@ -14,30 +24,21 @@ void Canvas::setRectMode (bool toogle){
 }
 
 void Canvas::mousePressEvent(QMouseEvent *event){
-    if (currenttool == Rectangle && event->button() == Qt::LeftButton) {
-        startPoint = event ->pos();
-        float x = startPoint.x();
-        float y = startPoint.y();
-        GraphicsObject* current = new Rect(0,0,x,y,0,0,"black","none",1);
-        objects.push_back(current);
-        drawing = true;
-    }
+    if (event->button() != Qt::LeftButton) return;
+
+    startPoint = event->pos();
+    current = create_shape(currenttool, startPoint);
+    if (current){objects.push_back(current); drawing = true; update();}
 }
 void Canvas::mouseMoveEvent (QMouseEvent *event){
-    if (currenttool == Rectangle && drawing){
-        endPoint = event -> pos();
-        float width = endPoint.x() - startPoint.x();
-        float height = endPoint.y() - startPoint.y();
-        Rect* current = dynamic_cast<Rect*>(objects.back());
-        if(!current) return;
-        current->set_width(width);
-        current->set_height(height);
-        update();
-    }
+    if (!drawing || !current) return;
+    current->update_drag(startPoint, event->pos());
+    // qDebug() << "Mouse moved to: " << event->pos();
+    update();
 }
 void Canvas::mouseReleaseEvent (QMouseEvent *event){
     if (currenttool == Rectangle && event->button() == Qt::LeftButton){
-        // endPoint = event->pos();
+        current = nullptr;
         drawing = false;
         update();
     }
@@ -45,10 +46,6 @@ void Canvas::mouseReleaseEvent (QMouseEvent *event){
 void Canvas::paintEvent(QPaintEvent*){
     QPainter painter(this);
     for (GraphicsObject* obj : objects){
-        if (Rect* rect = dynamic_cast<Rect*>(obj)){
-            painter.setPen(QPen(QColor(rect->get_stroke().c_str()), rect->get_strokewidth()));
-            painter.setBrush(QBrush(QColor(rect->get_fill().c_str())));
-            painter.drawRect(rect->get_x(), rect->get_y(), rect->get_width(), rect->get_height());
-        }
+        obj->draw(painter);
     }
 }

@@ -68,6 +68,17 @@ std::string Rect::to_svg() const {
     return str;
 }
 
+//drawing rect
+void Rect::draw(QPainter& painter) const {
+    painter.setPen(QPen(QColor(obj::get_stroke().c_str()), obj::get_strokewidth()));
+    painter.setBrush(QBrush(QColor(obj::get_fill().c_str())));
+    painter.drawRect(x, y, width, height);
+}
+
+//update width and height while forming
+void Rect::update_drag(const QPoint& start, const QPoint& end){
+    width = end.x() - start.x(); height = end.y() - start.y(); 
+}
 // int main (){
 //     rect defaultrect;
 //     rect rec(12,11,2,3,4,5,"red","orange");

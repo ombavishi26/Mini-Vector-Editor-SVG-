@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>   
 #include "config/Default.h"
+#include <QPainter>
 
 class GraphicsObject {
 private:
@@ -27,4 +28,8 @@ public:
     void set_sw(const float sw);
     //to svg
     virtual std::string to_svg() const;
+    //draw objects
+    virtual void draw(QPainter& painter) const {};
+    //changing properties when object is drag while forming
+    virtual void update_drag(const QPoint& start, const QPoint& end) {};
 };

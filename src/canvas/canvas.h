@@ -11,7 +11,7 @@ private:
     ToolType currenttool;
     std::vector<GraphicsObject*> objects;
     GraphicsObject* current;
-    
+
     bool drawing;
     QPoint startPoint;
     QPoint endPoint;
@@ -21,7 +21,8 @@ private:
     void mouseReleaseEvent(QMouseEvent* event) override;
     void paintEvent(QPaintEvent*) override;
     
-
+    //create objects
+    GraphicsObject* create_shape(ToolType type, const QPoint& start);
 public:
     Canvas(QWidget* parent);
     ~Canvas() = default;
