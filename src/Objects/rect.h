@@ -1,17 +1,17 @@
 #pragma once
 #include "GraphicsObject.h"
 
-class rect : public GraphicsObject {
+class Rect : public GraphicsObject {
 private:
     float width,height,x,y,rx,ry;
 
 public:
     //constructor
-    rect();
-    rect(const float w, const float h, const float x, const float y, const float rx, const float ry,
+    Rect();
+    Rect(const float w, const float h, const float x, const float y, const float rx, const float ry,
          const std::string& stroke=Default::stroke, const std::string& fill=Default::fill, const float sw = Default::strokewidth);
     //destructor
-    ~rect() override;
+    ~Rect() override;
     //print properties
     void print_properties() const override;
     //setter

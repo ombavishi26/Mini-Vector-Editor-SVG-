@@ -4,55 +4,55 @@ namespace defrect = Default::rect;
 using obj = GraphicsObject;
 
 //constructor
-rect::rect() : GraphicsObject(),width(defrect::width), height(defrect::height), x(defrect::x), y(defrect::y), rx(defrect::rx), ry(defrect::ry) {};
-rect::rect(const float w, const float h, const float x, const float y, const float rx, const float ry, const std::string& stroke, const std::string& fill, const float sw) 
+Rect::Rect() : GraphicsObject(),width(defrect::width), height(defrect::height), x(defrect::x), y(defrect::y), rx(defrect::rx), ry(defrect::ry) {};
+Rect::Rect(const float w, const float h, const float x, const float y, const float rx, const float ry, const std::string& stroke, const std::string& fill, const float sw) 
            : GraphicsObject(stroke, fill, sw), width(w), height(h), x(x), y(y), rx(rx), ry(ry) {};
 
 //destructor
-rect::~rect() {};
+Rect::~Rect() {};
 
 //print properties
-void rect::print_properties() const{
+void Rect::print_properties() const{
     std::cout << width << " " << height << " " << x << " " << y << " " << rx << " " << ry << " " ;
     GraphicsObject::print_properties();   
     // std::cout << std::endl;
 }
 //setter
-void rect::set_width(const float width){this->width = width;}
-void rect::set_height(const float height){this->height = height;}
-void rect::set_x(const float x){this->x = x;}
-void rect::set_y(const float y){this->y = y;}
-void rect::set_rx(const float rx){this->rx = rx;}
-void rect::set_ry(const float ry){this->ry = ry;}
+void Rect::set_width(const float width){this->width = width;}
+void Rect::set_height(const float height){this->height = height;}
+void Rect::set_x(const float x){this->x = x;}
+void Rect::set_y(const float y){this->y = y;}
+void Rect::set_rx(const float rx){this->rx = rx;}
+void Rect::set_ry(const float ry){this->ry = ry;}
 
 
 //getter
-int rect::get_width() const {return width;}
-int rect::get_height() const {return height;}
-int rect::get_x() const {return x;}
-int rect::get_y() const {return y;}
-int rect::get_rx() const {return rx;}
-int rect::get_ry() const {return ry;}
+int Rect::get_width() const {return width;}
+int Rect::get_height() const {return height;}
+int Rect::get_x() const {return x;}
+int Rect::get_y() const {return y;}
+int Rect::get_rx() const {return rx;}
+int Rect::get_ry() const {return ry;}
 
 //to svg return the svg syntax for rect
-std::string rect::to_svg() const {
+std::string Rect::to_svg() const {
     std::string str ="<rect ";
-    if(width != Default::rect::width){
+    if(width != defrect::width){
         str += "width=\"" + std::to_string(width) + "\" ";
     }
-    if (height != Default::rect::height){
+    if (height != defrect::height){
         str += "height=\"" + std::to_string(height) + "\" ";
     }
-    if (x != Default::rect::x){
+    if (x != defrect::x){
         str += "x=\"" + std::to_string(x) + "\" ";
     }
-    if (y != Default::rect::y){
+    if (y != defrect::y){
         str += "y=\"" + std::to_string(y) + "\" ";
     }
-    if (rx != Default::rect::rx){
+    if (rx != defrect::rx){
         str += "rx=\"" + std::to_string(rx) + "\" ";
     }
-    if (ry != Default::rect::ry){
+    if (ry != defrect::ry){
         str += "ry=\"" + std::to_string(ry) + "\" ";
     }  
     if (obj::get_stroke() != def::stroke){

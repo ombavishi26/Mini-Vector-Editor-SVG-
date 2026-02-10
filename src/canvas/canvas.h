@@ -7,9 +7,11 @@
 class Canvas : public QWidget {
 private:
     Q_OBJECT
-    enum ToolType {None, Rect , Circle, Line};
+    enum ToolType {None, Rectangle , Circle, Line};
     ToolType currenttool;
     std::vector<GraphicsObject*> objects;
+    GraphicsObject* current;
+    
     bool drawing;
     QPoint startPoint;
     QPoint endPoint;
