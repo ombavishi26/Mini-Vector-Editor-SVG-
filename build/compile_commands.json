@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/om/main/COP290/mini_vector_editor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o -c /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp",
+  "file": "/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/om/main/COP290/mini_vector_editor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/src/main.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/main.cpp",
+  "file": "/home/om/main/COP290/mini_vector_editor/src/main.cpp",
+  "output": "CMakeFiles/mini_vector_editor.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/om/main/COP290/mini_vector_editor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp",
+  "file": "/home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp",
+  "output": "CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/om/main/COP290/mini_vector_editor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp",
+  "file": "/home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp",
+  "output": "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o"
+},
+{
+  "directory": "/home/om/main/COP290/mini_vector_editor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp",
+  "file": "/home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp",
+  "output": "CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o"
+},
+{
+  "directory": "/home/om/main/COP290/mini_vector_editor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp",
+  "file": "/home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp",
+  "output": "CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o"
+}
+]

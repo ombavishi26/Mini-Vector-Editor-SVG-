@@ -12,11 +12,11 @@ private:
     Canvas* canvas;
     QToolBar* toolbar;
     QMenu* fileMenu;
-
+    QAction* rectAction;
     
 public:
     MainWindow(QWidget* parent);
-    ~MainWindow() = default;
+    ~MainWindow() override = default;
 
 };
 

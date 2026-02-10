@@ -150,14 +150,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/vector_editor_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/mini_vector_editor_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/vector_editor.dir/DependInfo.cmake"
-  "CMakeFiles/vector_editor_autogen_timestamp_deps.dir/DependInfo.cmake"
-  "CMakeFiles/vector_editor_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/mini_vector_editor.dir/DependInfo.cmake"
+  "CMakeFiles/mini_vector_editor_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/mini_vector_editor_autogen.dir/DependInfo.cmake"
   )

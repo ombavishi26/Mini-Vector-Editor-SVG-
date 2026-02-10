@@ -117,50 +117,146 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vector_editor
+# Target rules for targets named mini_vector_editor
 
 # Build rule for target.
-vector_editor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vector_editor
-.PHONY : vector_editor
+mini_vector_editor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mini_vector_editor
+.PHONY : mini_vector_editor
 
 # fast build rule for target.
-vector_editor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/build
-.PHONY : vector_editor/fast
+mini_vector_editor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/build
+.PHONY : mini_vector_editor/fast
 
 #=============================================================================
-# Target rules for targets named vector_editor_autogen_timestamp_deps
+# Target rules for targets named mini_vector_editor_autogen_timestamp_deps
 
 # Build rule for target.
-vector_editor_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vector_editor_autogen_timestamp_deps
-.PHONY : vector_editor_autogen_timestamp_deps
+mini_vector_editor_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mini_vector_editor_autogen_timestamp_deps
+.PHONY : mini_vector_editor_autogen_timestamp_deps
 
 # fast build rule for target.
-vector_editor_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor_autogen_timestamp_deps.dir/build.make CMakeFiles/vector_editor_autogen_timestamp_deps.dir/build
-.PHONY : vector_editor_autogen_timestamp_deps/fast
+mini_vector_editor_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor_autogen_timestamp_deps.dir/build.make CMakeFiles/mini_vector_editor_autogen_timestamp_deps.dir/build
+.PHONY : mini_vector_editor_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named vector_editor_autogen
+# Target rules for targets named mini_vector_editor_autogen
 
 # Build rule for target.
-vector_editor_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vector_editor_autogen
-.PHONY : vector_editor_autogen
+mini_vector_editor_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mini_vector_editor_autogen
+.PHONY : mini_vector_editor_autogen
 
 # fast build rule for target.
-vector_editor_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor_autogen.dir/build.make CMakeFiles/vector_editor_autogen.dir/build
-.PHONY : vector_editor_autogen/fast
+mini_vector_editor_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor_autogen.dir/build.make CMakeFiles/mini_vector_editor_autogen.dir/build
+.PHONY : mini_vector_editor_autogen/fast
+
+mini_vector_editor_autogen/mocs_compilation.o: mini_vector_editor_autogen/mocs_compilation.cpp.o
+.PHONY : mini_vector_editor_autogen/mocs_compilation.o
+
+# target to build an object file
+mini_vector_editor_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o
+.PHONY : mini_vector_editor_autogen/mocs_compilation.cpp.o
+
+mini_vector_editor_autogen/mocs_compilation.i: mini_vector_editor_autogen/mocs_compilation.cpp.i
+.PHONY : mini_vector_editor_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+mini_vector_editor_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.i
+.PHONY : mini_vector_editor_autogen/mocs_compilation.cpp.i
+
+mini_vector_editor_autogen/mocs_compilation.s: mini_vector_editor_autogen/mocs_compilation.cpp.s
+.PHONY : mini_vector_editor_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+mini_vector_editor_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.s
+.PHONY : mini_vector_editor_autogen/mocs_compilation.cpp.s
+
+src/Objects/GraphicsObject.o: src/Objects/GraphicsObject.cpp.o
+.PHONY : src/Objects/GraphicsObject.o
+
+# target to build an object file
+src/Objects/GraphicsObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o
+.PHONY : src/Objects/GraphicsObject.cpp.o
+
+src/Objects/GraphicsObject.i: src/Objects/GraphicsObject.cpp.i
+.PHONY : src/Objects/GraphicsObject.i
+
+# target to preprocess a source file
+src/Objects/GraphicsObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.i
+.PHONY : src/Objects/GraphicsObject.cpp.i
+
+src/Objects/GraphicsObject.s: src/Objects/GraphicsObject.cpp.s
+.PHONY : src/Objects/GraphicsObject.s
+
+# target to generate assembly for a file
+src/Objects/GraphicsObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.s
+.PHONY : src/Objects/GraphicsObject.cpp.s
+
+src/Objects/rect.o: src/Objects/rect.cpp.o
+.PHONY : src/Objects/rect.o
+
+# target to build an object file
+src/Objects/rect.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o
+.PHONY : src/Objects/rect.cpp.o
+
+src/Objects/rect.i: src/Objects/rect.cpp.i
+.PHONY : src/Objects/rect.i
+
+# target to preprocess a source file
+src/Objects/rect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.i
+.PHONY : src/Objects/rect.cpp.i
+
+src/Objects/rect.s: src/Objects/rect.cpp.s
+.PHONY : src/Objects/rect.s
+
+# target to generate assembly for a file
+src/Objects/rect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.s
+.PHONY : src/Objects/rect.cpp.s
+
+src/canvas/canvas.o: src/canvas/canvas.cpp.o
+.PHONY : src/canvas/canvas.o
+
+# target to build an object file
+src/canvas/canvas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o
+.PHONY : src/canvas/canvas.cpp.o
+
+src/canvas/canvas.i: src/canvas/canvas.cpp.i
+.PHONY : src/canvas/canvas.i
+
+# target to preprocess a source file
+src/canvas/canvas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.i
+.PHONY : src/canvas/canvas.cpp.i
+
+src/canvas/canvas.s: src/canvas/canvas.cpp.s
+.PHONY : src/canvas/canvas.s
+
+# target to generate assembly for a file
+src/canvas/canvas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s
+.PHONY : src/canvas/canvas.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -168,7 +264,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -176,7 +272,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/ui/mainwindow.o: src/ui/mainwindow.cpp.o
@@ -184,7 +280,7 @@ src/ui/mainwindow.o: src/ui/mainwindow.cpp.o
 
 # target to build an object file
 src/ui/mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/src/ui/mainwindow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o
 .PHONY : src/ui/mainwindow.cpp.o
 
 src/ui/mainwindow.i: src/ui/mainwindow.cpp.i
@@ -192,7 +288,7 @@ src/ui/mainwindow.i: src/ui/mainwindow.cpp.i
 
 # target to preprocess a source file
 src/ui/mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/src/ui/mainwindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.i
 .PHONY : src/ui/mainwindow.cpp.i
 
 src/ui/mainwindow.s: src/ui/mainwindow.cpp.s
@@ -200,32 +296,8 @@ src/ui/mainwindow.s: src/ui/mainwindow.cpp.s
 
 # target to generate assembly for a file
 src/ui/mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/src/ui/mainwindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.s
 .PHONY : src/ui/mainwindow.cpp.s
-
-vector_editor_autogen/mocs_compilation.o: vector_editor_autogen/mocs_compilation.cpp.o
-.PHONY : vector_editor_autogen/mocs_compilation.o
-
-# target to build an object file
-vector_editor_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/vector_editor_autogen/mocs_compilation.cpp.o
-.PHONY : vector_editor_autogen/mocs_compilation.cpp.o
-
-vector_editor_autogen/mocs_compilation.i: vector_editor_autogen/mocs_compilation.cpp.i
-.PHONY : vector_editor_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-vector_editor_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/vector_editor_autogen/mocs_compilation.cpp.i
-.PHONY : vector_editor_autogen/mocs_compilation.cpp.i
-
-vector_editor_autogen/mocs_compilation.s: vector_editor_autogen/mocs_compilation.cpp.s
-.PHONY : vector_editor_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-vector_editor_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_editor.dir/build.make CMakeFiles/vector_editor.dir/vector_editor_autogen/mocs_compilation.cpp.s
-.PHONY : vector_editor_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -235,18 +307,27 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... vector_editor_autogen"
-	@echo "... vector_editor_autogen_timestamp_deps"
-	@echo "... vector_editor"
+	@echo "... mini_vector_editor_autogen"
+	@echo "... mini_vector_editor_autogen_timestamp_deps"
+	@echo "... mini_vector_editor"
+	@echo "... mini_vector_editor_autogen/mocs_compilation.o"
+	@echo "... mini_vector_editor_autogen/mocs_compilation.i"
+	@echo "... mini_vector_editor_autogen/mocs_compilation.s"
+	@echo "... src/Objects/GraphicsObject.o"
+	@echo "... src/Objects/GraphicsObject.i"
+	@echo "... src/Objects/GraphicsObject.s"
+	@echo "... src/Objects/rect.o"
+	@echo "... src/Objects/rect.i"
+	@echo "... src/Objects/rect.s"
+	@echo "... src/canvas/canvas.o"
+	@echo "... src/canvas/canvas.i"
+	@echo "... src/canvas/canvas.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/ui/mainwindow.o"
 	@echo "... src/ui/mainwindow.i"
 	@echo "... src/ui/mainwindow.s"
-	@echo "... vector_editor_autogen/mocs_compilation.o"
-	@echo "... vector_editor_autogen/mocs_compilation.i"
-	@echo "... vector_editor_autogen/mocs_compilation.s"
 .PHONY : help
 
 

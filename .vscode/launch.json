@@ -28,7 +28,7 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/io/Parser/ParserSvg",
+            "program": "${workspaceFolder}/build/mini_vector_editor",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

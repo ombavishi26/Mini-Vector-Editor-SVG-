@@ -16,5 +16,8 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
 
     toolbar = new QToolBar("tools", this);
     addToolBar(Qt::LeftToolBarArea, toolbar);
-    toolbar -> addAction("Rectangle");
+    rectAction = new QAction("Rectangle", this);
+    rectAction -> setCheckable(true);
+    connect (rectAction, &QAction::toggled, canvas, &Canvas::setRectMode);
+    toolbar -> addAction(rectAction);
 }
