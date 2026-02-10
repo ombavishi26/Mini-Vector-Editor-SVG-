@@ -79,6 +79,13 @@ void Rect::draw(QPainter& painter) const {
 void Rect::update_drag(const QPoint& start, const QPoint& end){
     width = end.x() - start.x(); height = end.y() - start.y(); 
 }
+
+//bounding rect
+QRect Rect::bounding_rect() const {return QRect(x, y, width, height);}
+
+//inside of rect
+bool Rect::inside(const QPoint& point) const { return bounding_rect().contains(point);}
+
 // int main (){
 //     rect defaultrect;
 //     rect rec(12,11,2,3,4,5,"red","orange");

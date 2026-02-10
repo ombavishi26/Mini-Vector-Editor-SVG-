@@ -34,4 +34,8 @@ public:
     void draw(QPainter& painter) const override;
     //update width and height while forming
     void update_drag(const QPoint& start, const QPoint& end) override;
+    //bounding rect
+    QRect bounding_rect() const override;
+    //inside of rect
+    bool inside(const QPoint& point) const override;
 };

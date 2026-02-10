@@ -32,4 +32,10 @@ public:
     virtual void draw(QPainter& painter) const {};
     //changing properties when object is drag while forming
     virtual void update_drag(const QPoint& start, const QPoint& end) {};
+    //moving objects
+    virtual void move(const QPoint& delta) {};
+    //checking if point is inside 
+    virtual bool inside(const QPoint& point) const ;
+    //bounding rect
+    virtual QRect bounding_rect() const;
 };

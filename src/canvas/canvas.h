@@ -11,7 +11,9 @@ private:
     ToolType currenttool;
     std::vector<GraphicsObject*> objects;
     GraphicsObject* current;
-
+    QPoint pressPoint;
+    const int drag_threshold = 5;
+    bool dragging;
     bool drawing;
     QPoint startPoint;
     QPoint endPoint;

@@ -31,6 +31,12 @@ void obj::set_stroke(const std::string& stroke){this->stroke = stroke;}
 void obj::set_fill(const std::string& fill){this->fill = fill;}
 void obj::set_sw(const float sw){obj::strokewidth = sw;}
 
+//checking if point is inside
+bool obj::inside(const QPoint& point) const {return bounding_rect().contains(point);}
+
+//bounding rect
+QRect obj::bounding_rect() const {return QRect();} 
+
 //to svg
 std::string obj::to_svg() const {return "we are in Graphicsobject";};
 
