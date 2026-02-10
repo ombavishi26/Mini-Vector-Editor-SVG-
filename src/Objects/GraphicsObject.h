@@ -38,4 +38,6 @@ public:
     virtual bool inside(const QPoint& point) const ;
     //bounding rect
     virtual QRect bounding_rect() const;
+    //move object
+    virtual void move(const float del_x, const float del_y) {};
 };

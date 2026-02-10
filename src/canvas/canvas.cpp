@@ -26,6 +26,7 @@ void Canvas::mousePressEvent(QMouseEvent *event){
     if (event->button() != Qt::LeftButton) return;
 
     pressPoint = event->pos();
+    lastPoint = pressPoint;
     drawing = false;
     dragging = false;
     // current = create_shape(currenttool, pressPoint);
@@ -33,14 +34,20 @@ void Canvas::mousePressEvent(QMouseEvent *event){
 }
 void Canvas::mouseMoveEvent (QMouseEvent *event){
     if (!(event->buttons() & Qt::LeftButton)) return;
-    if ((event->pos() - pressPoint).manhattanLength() < drag_threshold) return;
+    if ((event->pos() - pressPoint).manhattanLength() < drag_threshold) return; //checking for dragging
     dragging = true;
-    if (!drawing && currenttool != None){
+    if(currenttool == None && current){             //if no tool selected then move if current is not nullptr
+        QPoint delta = event->pos() - lastPoint;
+        current->move(delta.x(), delta.y());
+        lastPoint = event->pos();
+        update();
+    }
+    if (!drawing && currenttool != None){               //if tool selected then make obj
         current = create_shape(currenttool, pressPoint);
         if (current){objects.push_back(current);}
         drawing = true;
     }
-    if (drawing && current){
+    if (drawing && current){                            //after creating changing obj property
         current->update_drag(pressPoint, event->pos());
         // qDebug() << "Mouse moved to: " << event->pos();
         update();

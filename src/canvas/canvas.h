@@ -15,6 +15,8 @@ private:
     const int drag_threshold = 5;
     bool dragging;
     bool drawing;
+    bool moving;
+    QPoint lastPoint;
     QPoint startPoint;
     QPoint endPoint;
     //mouse events

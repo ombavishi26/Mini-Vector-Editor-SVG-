@@ -86,6 +86,8 @@ QRect Rect::bounding_rect() const {return QRect(x, y, width, height);}
 //inside of rect
 bool Rect::inside(const QPoint& point) const { return bounding_rect().contains(point);}
 
+//move rect
+void Rect::move(const float del_x, const float del_y){x += del_x; y += del_y;}
 // int main (){
 //     rect defaultrect;
 //     rect rec(12,11,2,3,4,5,"red","orange");

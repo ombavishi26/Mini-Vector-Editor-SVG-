@@ -38,4 +38,6 @@ public:
     QRect bounding_rect() const override;
     //inside of rect
     bool inside(const QPoint& point) const override;
+    //move rect
+    void move(const float del_x, const float del_y) override;
 };
