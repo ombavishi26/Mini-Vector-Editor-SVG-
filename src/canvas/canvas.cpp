@@ -102,3 +102,12 @@ void Canvas::setStrokeColor(const std::string& color){
         update();
     }
 }
+
+void Canvas::newFile() {
+    for (GraphicsObject* obj : objects) {
+        delete obj;
+    }
+    objects.clear();
+    current = nullptr;
+    update();
+}

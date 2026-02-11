@@ -35,4 +35,5 @@ public:
     void setStrokeWidth(float w);
     void setFillColor(const std::string& color);
     void setStrokeColor(const std::string& color);
+    void newFile();
 };

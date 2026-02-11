@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/main.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/main.cpp.o.d"
+  "CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o"
+  "CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o.d"
   "mini_vector_editor"

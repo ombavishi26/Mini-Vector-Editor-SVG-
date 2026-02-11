@@ -80,85 +80,99 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
 CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o: mini_vector_editor_autogen/mocs_compilation.cpp
 CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o: CMakeFiles/mini_vector_editor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o -MF CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o -c /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o -MF CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.o -c /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp
 
 CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp > CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp > CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp -o CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp -o CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/mini_vector_editor.dir/src/main.cpp.o: CMakeFiles/mini_vector_editor.dir/flags.make
 CMakeFiles/mini_vector_editor.dir/src/main.cpp.o: /home/om/main/COP290/mini_vector_editor/src/main.cpp
 CMakeFiles/mini_vector_editor.dir/src/main.cpp.o: CMakeFiles/mini_vector_editor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mini_vector_editor.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/main.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/main.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/main.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/main.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/main.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/main.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/main.cpp
 
 CMakeFiles/mini_vector_editor.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_vector_editor.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/main.cpp > CMakeFiles/mini_vector_editor.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/main.cpp > CMakeFiles/mini_vector_editor.dir/src/main.cpp.i
 
 CMakeFiles/mini_vector_editor.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_vector_editor.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/main.cpp -o CMakeFiles/mini_vector_editor.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/main.cpp -o CMakeFiles/mini_vector_editor.dir/src/main.cpp.s
 
 CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o: CMakeFiles/mini_vector_editor.dir/flags.make
 CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o: /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp
 CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o: CMakeFiles/mini_vector_editor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp
 
 CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp > CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp > CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.i
 
 CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp -o CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.cpp -o CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.s
 
 CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: CMakeFiles/mini_vector_editor.dir/flags.make
 CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp
 CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: CMakeFiles/mini_vector_editor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp
 
 CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp > CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp > CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.i
 
 CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp -o CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp -o CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s
 
 CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o: CMakeFiles/mini_vector_editor.dir/flags.make
 CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o: /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp
 CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o: CMakeFiles/mini_vector_editor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp
 
 CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp > CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp > CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.i
 
 CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp -o CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/Objects/GraphicsObject.cpp -o CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.s
 
 CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o: CMakeFiles/mini_vector_editor.dir/flags.make
 CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o: /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp
 CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o: CMakeFiles/mini_vector_editor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp
 
 CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp > CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp > CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.i
 
 CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp -o CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp -o CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.s
+
+CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o: CMakeFiles/mini_vector_editor.dir/flags.make
+CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o: /home/om/main/COP290/mini_vector_editor/src/ui/actions.cpp
+CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o: CMakeFiles/mini_vector_editor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o -MF CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o.d -o CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/ui/actions.cpp
+
+CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/om/main/COP290/mini_vector_editor/src/ui/actions.cpp > CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.i
+
+CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/om/main/COP290/mini_vector_editor/src/ui/actions.cpp -o CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.s
 
 # Object files for target mini_vector_editor
 mini_vector_editor_OBJECTS = \
@@ -167,7 +181,8 @@ mini_vector_editor_OBJECTS = \
 "CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o" \
 "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o" \
 "CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o" \
-"CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o"
+"CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o" \
+"CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o"
 
 # External object files for target mini_vector_editor
 mini_vector_editor_EXTERNAL_OBJECTS =
@@ -178,6 +193,7 @@ mini_vector_editor: CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o
 mini_vector_editor: CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o
 mini_vector_editor: CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.o
 mini_vector_editor: CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o
+mini_vector_editor: CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o
 mini_vector_editor: CMakeFiles/mini_vector_editor.dir/build.make
 mini_vector_editor: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 mini_vector_editor: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
@@ -185,7 +201,7 @@ mini_vector_editor: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 mini_vector_editor: /usr/lib/x86_64-linux-gnu/libGLX.so
 mini_vector_editor: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 mini_vector_editor: CMakeFiles/mini_vector_editor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable mini_vector_editor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable mini_vector_editor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mini_vector_editor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

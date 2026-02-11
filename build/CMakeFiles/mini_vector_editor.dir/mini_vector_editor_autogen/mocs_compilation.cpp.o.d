@@ -364,6 +364,10 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/line.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/path.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/text.h \
+ /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/YPKJ5OE7LN/moc_actions.cpp \
+ /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/YPKJ5OE7LN/../../../src/ui/actions.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/YPKJ5OE7LN/moc_mainwindow.cpp \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/YPKJ5OE7LN/../../../src/ui/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
@@ -387,4 +391,6 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QColorDialog \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcolordialog.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcolordialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h

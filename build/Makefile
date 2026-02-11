@@ -275,6 +275,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/ui/actions.o: src/ui/actions.cpp.o
+.PHONY : src/ui/actions.o
+
+# target to build an object file
+src/ui/actions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o
+.PHONY : src/ui/actions.cpp.o
+
+src/ui/actions.i: src/ui/actions.cpp.i
+.PHONY : src/ui/actions.i
+
+# target to preprocess a source file
+src/ui/actions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.i
+.PHONY : src/ui/actions.cpp.i
+
+src/ui/actions.s: src/ui/actions.cpp.s
+.PHONY : src/ui/actions.s
+
+# target to generate assembly for a file
+src/ui/actions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.s
+.PHONY : src/ui/actions.cpp.s
+
 src/ui/mainwindow.o: src/ui/mainwindow.cpp.o
 .PHONY : src/ui/mainwindow.o
 
@@ -325,6 +349,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/ui/actions.o"
+	@echo "... src/ui/actions.i"
+	@echo "... src/ui/actions.s"
 	@echo "... src/ui/mainwindow.o"
 	@echo "... src/ui/mainwindow.i"
 	@echo "... src/ui/mainwindow.s"

@@ -1,9 +1,11 @@
 {
-    
     "configurations": [
         {
             "name": "Linux",
-            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "compileCommands": [
+                "${workspaceFolder}/build/compile_commands.json",
+                "/home/om/main/COP290/mini_vector_editor/build/compile_commands.json"
+            ],
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/include/x86_64-linux-gnu/qt6",
