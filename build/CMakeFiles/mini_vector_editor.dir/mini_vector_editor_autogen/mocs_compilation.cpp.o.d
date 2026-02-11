@@ -372,6 +372,7 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../io/Parser/ParserSvg.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../commands/Command.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../commands/AddObjectCommand.h \
+ /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../commands/MoveCommand.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/YPKJ5OE7LN/moc_actions.cpp \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/YPKJ5OE7LN/../../../src/ui/actions.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \

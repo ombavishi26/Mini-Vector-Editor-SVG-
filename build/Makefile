@@ -371,6 +371,30 @@ src/commands/AddObjectCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.s
 .PHONY : src/commands/AddObjectCommand.cpp.s
 
+src/commands/MoveCommand.o: src/commands/MoveCommand.cpp.o
+.PHONY : src/commands/MoveCommand.o
+
+# target to build an object file
+src/commands/MoveCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.o
+.PHONY : src/commands/MoveCommand.cpp.o
+
+src/commands/MoveCommand.i: src/commands/MoveCommand.cpp.i
+.PHONY : src/commands/MoveCommand.i
+
+# target to preprocess a source file
+src/commands/MoveCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.i
+.PHONY : src/commands/MoveCommand.cpp.i
+
+src/commands/MoveCommand.s: src/commands/MoveCommand.cpp.s
+.PHONY : src/commands/MoveCommand.s
+
+# target to generate assembly for a file
+src/commands/MoveCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.s
+.PHONY : src/commands/MoveCommand.cpp.s
+
 src/io/Parser/ParserCircle.o: src/io/Parser/ParserCircle.cpp.o
 .PHONY : src/io/Parser/ParserCircle.o
 
@@ -673,6 +697,9 @@ help:
 	@echo "... src/commands/AddObjectCommand.o"
 	@echo "... src/commands/AddObjectCommand.i"
 	@echo "... src/commands/AddObjectCommand.s"
+	@echo "... src/commands/MoveCommand.o"
+	@echo "... src/commands/MoveCommand.i"
+	@echo "... src/commands/MoveCommand.s"
 	@echo "... src/io/Parser/ParserCircle.o"
 	@echo "... src/io/Parser/ParserCircle.i"
 	@echo "... src/io/Parser/ParserCircle.s"

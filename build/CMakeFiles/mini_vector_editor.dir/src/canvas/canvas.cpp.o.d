@@ -367,6 +367,7 @@ CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../io/Parser/ParserSvg.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../commands/Command.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../commands/AddObjectCommand.h \
+ /home/om/main/COP290/mini_vector_editor/src/canvas/../commands/MoveCommand.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \

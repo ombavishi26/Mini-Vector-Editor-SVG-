@@ -43,4 +43,6 @@ public:
     //cloning object
     virtual GraphicsObject* clone() const{return new GraphicsObject(*this);};
     virtual GraphicsObject* clone(const float new_x, const float new_y) const{return new GraphicsObject(*this);}
+    //set position
+    virtual void set_position(float nx,float ny){};
 };

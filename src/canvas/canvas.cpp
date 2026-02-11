@@ -56,7 +56,12 @@ void Canvas::mouseMoveEvent (QMouseEvent *event){
 }
 void Canvas::mouseReleaseEvent (QMouseEvent *event){
     if (event->button() != Qt::LeftButton) return;
-    
+    if (dragging && !drawing){
+        float delx = event->pos().x() - pressPoint.x();
+        float dely = event->pos().y() - pressPoint.y();
+        current->move(-delx, -dely);
+        executeCommand (new MoveCommand(current,delx,dely)); 
+    }
     if (!dragging){          //if noot dragging then it was seelect
         current = nullptr;
         qDebug() << "Checking object at: " << event->pos();
@@ -106,6 +111,7 @@ void Canvas::setStrokeColor(const std::string& color){
 }
 
 void Canvas::newFile() {
+    clearHistory();
     for (GraphicsObject* obj : objects) {
         delete obj;
     }
@@ -117,6 +123,7 @@ void Canvas::newFile() {
 
 void Canvas::openFile(const std::string& filename){
     current = nullptr;
+    clearHistory();
     ParserSvg parser;
     for (GraphicsObject* obj : objects) {
         delete obj;
@@ -145,12 +152,10 @@ void Canvas::cut(){
     clipboard.clear();
     clipboard.push_back(current->clone());
     auto obj = std::find(objects.begin(), objects.end(), current);
-    if (obj != objects.end()) {
-        delete *obj;
-        objects.erase(obj);
-        current = nullptr;
-        update();
-    }
+    objects.erase(obj);
+    current = nullptr;
+    update();
+    
 }
 
 void Canvas::copy(){
@@ -172,12 +177,13 @@ void Canvas::executeCommand(Command* cmd){
     undoStack.push_back(cmd);
     for(auto c : redoStack){
         delete c;
-        redoStack.clear();
     }
+    redoStack.clear();
     update();
 }
 
 void Canvas::undo(){
+    current = nullptr;
     if(undoStack.empty()) return;
     Command* cmd = undoStack.back();
     undoStack.pop_back();
@@ -194,4 +200,14 @@ void Canvas::redo(){
     cmd->execute();
     undoStack.push_back(cmd);
     update();
+}
+
+void Canvas::clearHistory(){
+    for(auto c : undoStack)
+        delete c;
+    undoStack.clear();
+
+    for(auto c : redoStack)
+        delete c;
+    redoStack.clear();
 }

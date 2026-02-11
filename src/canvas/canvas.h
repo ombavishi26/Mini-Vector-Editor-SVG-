@@ -6,6 +6,7 @@
 #include "../io/Parser/ParserSvg.h"
 #include "../commands/Command.h"
 #include "../commands/AddObjectCommand.h"
+#include "../commands/MoveCommand.h"
 // #include <QPainter>
 
 class Canvas : public QWidget {
@@ -15,6 +16,7 @@ private:
     ToolType currenttool;
     std::vector<GraphicsObject*> objects;
     std::vector<GraphicsObject*> clipboard;
+    GraphicsObject* selected;
     GraphicsObject* current;
     QPoint pressPoint;
     const int drag_threshold = 5;
@@ -35,6 +37,8 @@ private:
     std::vector<Command*> redoStack;
     //execute comandd
     void executeCommand(Command* cmd);
+    //clera history
+    void clearHistory();
     
     //create objects
     GraphicsObject* create_shape(ToolType type, const QPoint& start);

@@ -31,6 +31,7 @@ add_executable(mini_vector_editor
     src/io/Parser/ParserText.cpp
     src/io/Parser/ParserUtils.cpp
     src/commands/AddObjectCommand.cpp
+    src/commands/MoveCommand.cpp
 )
 
 target_include_directories(mini_vector_editor PRIVATE src)

@@ -379,6 +379,7 @@ CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../io/Parser/ParserSvg.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/Command.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/AddObjectCommand.h \
+ /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/MoveCommand.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \

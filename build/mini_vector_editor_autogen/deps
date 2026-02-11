@@ -23,6 +23,8 @@ mini_vector_editor_autogen/timestamp: \
 	/home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.h \
 	/home/om/main/COP290/mini_vector_editor/src/commands/Command.h \
+	/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.cpp \
+	/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.h \
 	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserCircle.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserLine.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserPath.cpp \

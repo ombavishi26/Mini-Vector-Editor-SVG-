@@ -1,0 +1,46 @@
+src/
+├── main.cpp
+│
+├── ui/
+│   ├── mainwindow.cpp
+│   ├── mainwindow.h
+│   ├── actions.cpp
+│   └── actions.h
+│
+├── canvas/
+│   ├── canvas.cpp
+│   └── canvas.h
+│
+├── Objects/
+│   ├── GraphicsObject.h
+│   ├── GraphicsObject.cpp
+│   ├── rect.h
+│   ├── rect.cpp
+│   ├── circle.h
+│   └── circle.cpp
+│
+├── io/
+│   ├── SvgSaver.cpp
+│   ├── SvgSaver.h
+│   └── Parser/
+│       ├── ParserSvg.cpp
+│       └── ParserSvg.h
+│
+└── commands/              ← NEW FOLDER
+    ├── Command.h
+    ├── AddObjectCommand.h
+    ├── AddObjectCommand.cpp
+    ├── DeleteObjectCommand.h
+    ├── DeleteObjectCommand.cpp
+    ├── MoveCommand.h
+    ├── MoveCommand.cpp
+    ├── ResizeCommand.h
+    ├── ResizeCommand.cpp
+    ├── ChangeFillCommand.h
+    ├── ChangeFillCommand.cpp
+    ├── ChangeStrokeCommand.h
+    ├── ChangeStrokeCommand.cpp
+    ├── CutCommand.h
+    ├── CutCommand.cpp
+    ├── PasteCommand.h
+    └── PasteCommand.cpp
