@@ -71,6 +71,7 @@ void Canvas::mouseReleaseEvent (QMouseEvent *event){
     update();
     drawing = false;
     dragging = false;
+    lastPoint = event->pos();
 }
 void Canvas::paintEvent(QPaintEvent*){
     QPainter painter(this);
@@ -137,4 +138,31 @@ void Canvas::saveAs(const std::string& filename){
     SvgSaver saver;
     saver.svg_saver(filename, objects);
     currentfile = filename;
+}
+
+void Canvas::cut(){
+    if (!current) return;
+    clipboard.clear();
+    clipboard.push_back(current->clone());
+    auto obj = std::find(objects.begin(), objects.end(), current);
+    if (obj != objects.end()) {
+        delete *obj;
+        objects.erase(obj);
+        current = nullptr;
+        update();
+    }
+}
+
+void Canvas::copy(){
+    if (!current) return;
+    clipboard.clear();
+    clipboard.push_back(current->clone());
+}
+
+void Canvas::paste(){
+    if (clipboard.empty()) return;
+    GraphicsObject* newObj = clipboard[0]->clone(lastPoint.x(), lastPoint.y());
+    objects.push_back(newObj);
+    current = newObj;
+    update();
 }

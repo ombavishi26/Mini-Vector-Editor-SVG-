@@ -88,6 +88,11 @@ bool Rect::inside(const QPoint& point) const { return bounding_rect().contains(p
 
 //move rect
 void Rect::move(const float del_x, const float del_y){x += del_x; y += del_y;}
+
+//copy with x and y 
+GraphicsObject* Rect::clone(const float nx, const float ny) const {
+    return new Rect(width, height, nx, ny, rx, ry, obj::get_stroke(), obj::get_fill(), obj::get_strokewidth());
+}
 // int main (){
 //     rect defaultrect;
 //     rect rec(12,11,2,3,4,5,"red","orange");

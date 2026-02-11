@@ -19,6 +19,11 @@ private:
     QAction* saveAsAction;
     QAction* openAction;
     QAction* closeAction;
+    //cut copy paste actions
+    QAction* cutAction;
+    QAction* copyAction;
+    QAction* pasteAction;
+    ///style actions
     QAction* fillAction;
     QAction* strokeAction;
     QAction* strokeWidthAction;
@@ -29,6 +34,11 @@ private:
     void onSaveAsAction();
     void onOpenAction();
     void onCloseAction();
+    //cut copy paste function
+    void onCutAction();
+    void onCopyAction();
+    void onPasteAction();
+    //style functions
     void onFillAction();
     void onStrokeAction();
     void onStrokeWidthAction();

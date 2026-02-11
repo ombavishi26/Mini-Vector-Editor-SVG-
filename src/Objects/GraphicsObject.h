@@ -40,4 +40,7 @@ public:
     virtual QRect bounding_rect() const;
     //move object
     virtual void move(const float del_x, const float del_y) {};
+    //cloning object
+    virtual GraphicsObject* clone() const{return new GraphicsObject(*this);};
+    virtual GraphicsObject* clone(const float new_x, const float new_y) const{return new GraphicsObject(*this);}
 };

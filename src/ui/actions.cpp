@@ -34,6 +34,16 @@ void Actions::createMenus(QMenuBar* menuBar) {
     closeAction = new QAction("Close", this);
     fileMenu -> addAction(closeAction);
     connect(closeAction, &QAction::triggered, this, &Actions::onCloseAction);
+    //cut copy paste action
+    cutAction = new QAction("Cut", this);
+    menuBar -> addAction(cutAction);
+    connect(cutAction, &QAction::triggered, this, &Actions::onCutAction);
+    copyAction = new QAction("Copy", this);
+    menuBar -> addAction(copyAction);
+    connect(copyAction, &QAction::triggered, this, &Actions::onCopyAction);
+    pasteAction = new QAction("Paste", this);
+    menuBar -> addAction(pasteAction);
+    connect(pasteAction, &QAction::triggered, this, &Actions::onPasteAction);
 }
 
 void Actions::createToolBar(QToolBar* toolBar) {
@@ -57,6 +67,12 @@ void Actions::createToolBar(QToolBar* toolBar) {
     connect(strokeWidthAction, &QAction::triggered, this, &Actions::onStrokeWidthAction);
 }
 
+//cut copy paste 
+void Actions::onCutAction(){canvas->cut();}
+void Actions::onCopyAction(){canvas->copy();}
+void Actions::onPasteAction(){canvas->paste();}
+
+//file actions
 void Actions::onNewAction() {
     auto reply = QMessageBox::question(mainwindow, "New Canvas", "Are you sure you want to create a new canvas? Unsaved changes will be lost.", QMessageBox::Yes | QMessageBox::No);
     if (reply == QMessageBox::Yes) {canvas->newFile();}
@@ -96,6 +112,7 @@ void Actions::onCloseAction(){
     if (reply == QMessageBox::Yes) {mainwindow->close();}
 }
 
+//style actions
 void Actions::onFillAction() {
     QColor color = QColorDialog::getColor(Qt::white, mainwindow, "Select Fill Color");
     if (color.isValid()) {canvas->setFillColor(color.name().toStdString());}

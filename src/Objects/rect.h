@@ -40,4 +40,7 @@ public:
     bool inside(const QPoint& point) const override;
     //move rect
     void move(const float del_x, const float del_y) override;
+    //cloning rect
+    GraphicsObject* clone() const override {return new Rect(*this);}
+    GraphicsObject* clone(const float x, const float y) const override;
 };
