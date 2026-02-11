@@ -245,6 +245,12 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.h",
+			"MU",
+			"6JCNSNR7WH/moc_ChangeStrokeCommand.cpp",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.h",
 			"MU",
 			"6JCNSNR7WH/moc_MoveCommand.cpp",
@@ -376,6 +382,11 @@
 		],
 		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/ChangeFillCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.cpp",
 			"MU",
 			null
 		],

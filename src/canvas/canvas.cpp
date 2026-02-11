@@ -105,7 +105,8 @@ void Canvas::setFillColor(const std::string& color){
 }
 void Canvas::setStrokeColor(const std::string& color){
     if (current){
-        current->set_stroke(color);
+        executeCommand(new ChangeStrokeCommand(current,current->get_stroke(),color));
+        // current->set_stroke(color);
         update();
     }
 }

@@ -1,6 +1,6 @@
 #include "ChangeFillCommand.h"
 
-ChangeFillCommand::ChangeFillCommand(GraphicsObject* object, std::string oldFill, std::string newFill) : 
+ChangeFillCommand::ChangeFillCommand(GraphicsObject* object,const std::string& oldFill,const std::string& newFill) : 
     object(object), oldFill(oldFill), newFill(newFill) {};
 
 void ChangeFillCommand::execute(){

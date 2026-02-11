@@ -33,6 +33,7 @@ add_executable(mini_vector_editor
     src/commands/AddObjectCommand.cpp
     src/commands/MoveCommand.cpp
     src/commands/ChangeFillCommand.cpp
+    src/commands/ChangeStrokeCommand.cpp
 )
 
 target_include_directories(mini_vector_editor PRIVATE src)

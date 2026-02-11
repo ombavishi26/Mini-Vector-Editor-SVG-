@@ -22,6 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/commands/ChangeFillCommand.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/commands/ChangeFillCommand.cpp.o.d"
+  "CMakeFiles/mini_vector_editor.dir/src/commands/ChangeStrokeCommand.cpp.o"
+  "CMakeFiles/mini_vector_editor.dir/src/commands/ChangeStrokeCommand.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o"

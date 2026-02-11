@@ -7,7 +7,7 @@ private:
     std::string oldFill, newFill;
 
 public:
-    ChangeFillCommand(GraphicsObject* object, std::string oldFill, std::string newFill);
+    ChangeFillCommand(GraphicsObject* object,const std::string& oldFill,const std::string& newFill);
     ~ChangeFillCommand(){};
 
     void execute() override;

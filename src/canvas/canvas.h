@@ -8,6 +8,7 @@
 #include "../commands/AddObjectCommand.h"
 #include "../commands/MoveCommand.h"
 #include "../commands/ChangeFillCommand.h"
+#include "../commands/ChangeStrokeCommand.h"
 // #include <QPainter>
 
 class Canvas : public QWidget {
