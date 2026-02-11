@@ -30,8 +30,10 @@ void Actions::createMenus(QMenuBar* menuBar) {
     fileMenu -> addAction(saveAsAction);
     connect(saveAsAction, &QAction::triggered, this, &Actions::onSaveAsAction);
     // fileMenu ->addAction("Save As");
-    fileMenu ->addAction("Close");
-    menuBar -> addAction("Edit");
+    //adding close action
+    closeAction = new QAction("Close", this);
+    fileMenu -> addAction(closeAction);
+    connect(closeAction, &QAction::triggered, this, &Actions::onCloseAction);
 }
 
 void Actions::createToolBar(QToolBar* toolBar) {
@@ -87,6 +89,11 @@ void Actions::onSaveAsAction() {
         canvas->saveAs(fileName.toStdString());
     }
         
+}
+
+void Actions::onCloseAction(){
+    auto reply = QMessageBox::question(mainwindow, "Close Canvas", "Are you sure you want to close the canvas? Unsaved changes will be lost.", QMessageBox::Yes | QMessageBox::No);
+    if (reply == QMessageBox::Yes) {mainwindow->close();}
 }
 
 void Actions::onFillAction() {

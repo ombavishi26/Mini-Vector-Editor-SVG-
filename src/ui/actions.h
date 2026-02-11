@@ -18,6 +18,7 @@ private:
     QAction* saveAction;
     QAction* saveAsAction;
     QAction* openAction;
+    QAction* closeAction;
     QAction* fillAction;
     QAction* strokeAction;
     QAction* strokeWidthAction;
@@ -27,6 +28,7 @@ private:
     void onSaveAction();
     void onSaveAsAction();
     void onOpenAction();
+    void onCloseAction();
     void onFillAction();
     void onStrokeAction();
     void onStrokeWidthAction();
