@@ -443,6 +443,30 @@ src/commands/ChangeSwCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeSwCommand.cpp.s
 .PHONY : src/commands/ChangeSwCommand.cpp.s
 
+src/commands/CutCommand.o: src/commands/CutCommand.cpp.o
+.PHONY : src/commands/CutCommand.o
+
+# target to build an object file
+src/commands/CutCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/CutCommand.cpp.o
+.PHONY : src/commands/CutCommand.cpp.o
+
+src/commands/CutCommand.i: src/commands/CutCommand.cpp.i
+.PHONY : src/commands/CutCommand.i
+
+# target to preprocess a source file
+src/commands/CutCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/CutCommand.cpp.i
+.PHONY : src/commands/CutCommand.cpp.i
+
+src/commands/CutCommand.s: src/commands/CutCommand.cpp.s
+.PHONY : src/commands/CutCommand.s
+
+# target to generate assembly for a file
+src/commands/CutCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/CutCommand.cpp.s
+.PHONY : src/commands/CutCommand.cpp.s
+
 src/commands/MoveCommand.o: src/commands/MoveCommand.cpp.o
 .PHONY : src/commands/MoveCommand.o
 
@@ -778,6 +802,9 @@ help:
 	@echo "... src/commands/ChangeSwCommand.o"
 	@echo "... src/commands/ChangeSwCommand.i"
 	@echo "... src/commands/ChangeSwCommand.s"
+	@echo "... src/commands/CutCommand.o"
+	@echo "... src/commands/CutCommand.i"
+	@echo "... src/commands/CutCommand.s"
 	@echo "... src/commands/MoveCommand.o"
 	@echo "... src/commands/MoveCommand.i"
 	@echo "... src/commands/MoveCommand.s"

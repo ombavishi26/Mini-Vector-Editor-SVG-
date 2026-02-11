@@ -10,6 +10,7 @@
 #include "../commands/ChangeFillCommand.h"
 #include "../commands/ChangeStrokeCommand.h"
 #include "../commands/ChangeSwCommand.h"
+#include "../commands/CutCommand.h"
 // #include <QPainter>
 
 class Canvas : public QWidget {

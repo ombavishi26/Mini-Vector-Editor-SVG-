@@ -153,8 +153,7 @@ void Canvas::cut(){
     if (!current) return;
     clipboard.clear();
     clipboard.push_back(current->clone());
-    auto obj = std::find(objects.begin(), objects.end(), current);
-    objects.erase(obj);
+    executeCommand(new CutCommand(objects, current));
     current = nullptr;
     update();
     

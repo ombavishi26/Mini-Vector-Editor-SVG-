@@ -257,6 +257,12 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/CutCommand.h",
+			"MU",
+			"6JCNSNR7WH/moc_CutCommand.cpp",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.h",
 			"MU",
 			"6JCNSNR7WH/moc_MoveCommand.cpp",
@@ -398,6 +404,11 @@
 		],
 		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/ChangeSwCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/CutCommand.cpp",
 			"MU",
 			null
 		],

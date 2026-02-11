@@ -13,6 +13,7 @@
   /home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/ChangeSwCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/Command.h \
+  /home/om/main/COP290/mini_vector_editor/src/commands/CutCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserSvg.h \
   /home/om/main/COP290/mini_vector_editor/src/io/SvgSaver.h \
