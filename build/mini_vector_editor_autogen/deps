@@ -26,6 +26,8 @@ mini_vector_editor_autogen/timestamp: \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeFillCommand.h \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.h \
+	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeSwCommand.cpp \
+	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeSwCommand.h \
 	/home/om/main/COP290/mini_vector_editor/src/commands/Command.h \
 	/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.h \

@@ -11,6 +11,7 @@
   /home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/ChangeFillCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.h \
+  /home/om/main/COP290/mini_vector_editor/src/commands/ChangeSwCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/Command.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserSvg.h \

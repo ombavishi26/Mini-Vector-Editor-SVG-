@@ -419,6 +419,30 @@ src/commands/ChangeStrokeCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeStrokeCommand.cpp.s
 .PHONY : src/commands/ChangeStrokeCommand.cpp.s
 
+src/commands/ChangeSwCommand.o: src/commands/ChangeSwCommand.cpp.o
+.PHONY : src/commands/ChangeSwCommand.o
+
+# target to build an object file
+src/commands/ChangeSwCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeSwCommand.cpp.o
+.PHONY : src/commands/ChangeSwCommand.cpp.o
+
+src/commands/ChangeSwCommand.i: src/commands/ChangeSwCommand.cpp.i
+.PHONY : src/commands/ChangeSwCommand.i
+
+# target to preprocess a source file
+src/commands/ChangeSwCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeSwCommand.cpp.i
+.PHONY : src/commands/ChangeSwCommand.cpp.i
+
+src/commands/ChangeSwCommand.s: src/commands/ChangeSwCommand.cpp.s
+.PHONY : src/commands/ChangeSwCommand.s
+
+# target to generate assembly for a file
+src/commands/ChangeSwCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeSwCommand.cpp.s
+.PHONY : src/commands/ChangeSwCommand.cpp.s
+
 src/commands/MoveCommand.o: src/commands/MoveCommand.cpp.o
 .PHONY : src/commands/MoveCommand.o
 
@@ -751,6 +775,9 @@ help:
 	@echo "... src/commands/ChangeStrokeCommand.o"
 	@echo "... src/commands/ChangeStrokeCommand.i"
 	@echo "... src/commands/ChangeStrokeCommand.s"
+	@echo "... src/commands/ChangeSwCommand.o"
+	@echo "... src/commands/ChangeSwCommand.i"
+	@echo "... src/commands/ChangeSwCommand.s"
 	@echo "... src/commands/MoveCommand.o"
 	@echo "... src/commands/MoveCommand.i"
 	@echo "... src/commands/MoveCommand.s"

@@ -392,6 +392,7 @@ CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/MoveCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/ChangeFillCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/ChangeStrokeCommand.h \
+ /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/ChangeSwCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \

@@ -93,7 +93,8 @@ void Canvas::paintEvent(QPaintEvent*){
 //style objects
 void Canvas::setStrokeWidth(float w){
     if (current){
-        current->set_sw(w);
+        executeCommand(new ChangeSwCommand(current,current->get_strokewidth(),w));
+        // current->set_sw(w);
         update();
     }
 }
