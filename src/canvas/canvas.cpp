@@ -99,7 +99,7 @@ void Canvas::setStrokeWidth(float w){
 }
 void Canvas::setFillColor(const std::string& color){
     if (current){
-        current->set_fill(color);
+        executeCommand(new ChangeFillCommand(current,current->get_fill(),color));
         update();
     }
 }

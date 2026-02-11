@@ -371,6 +371,30 @@ src/commands/AddObjectCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.s
 .PHONY : src/commands/AddObjectCommand.cpp.s
 
+src/commands/ChangeFillCommand.o: src/commands/ChangeFillCommand.cpp.o
+.PHONY : src/commands/ChangeFillCommand.o
+
+# target to build an object file
+src/commands/ChangeFillCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeFillCommand.cpp.o
+.PHONY : src/commands/ChangeFillCommand.cpp.o
+
+src/commands/ChangeFillCommand.i: src/commands/ChangeFillCommand.cpp.i
+.PHONY : src/commands/ChangeFillCommand.i
+
+# target to preprocess a source file
+src/commands/ChangeFillCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeFillCommand.cpp.i
+.PHONY : src/commands/ChangeFillCommand.cpp.i
+
+src/commands/ChangeFillCommand.s: src/commands/ChangeFillCommand.cpp.s
+.PHONY : src/commands/ChangeFillCommand.s
+
+# target to generate assembly for a file
+src/commands/ChangeFillCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeFillCommand.cpp.s
+.PHONY : src/commands/ChangeFillCommand.cpp.s
+
 src/commands/MoveCommand.o: src/commands/MoveCommand.cpp.o
 .PHONY : src/commands/MoveCommand.o
 
@@ -697,6 +721,9 @@ help:
 	@echo "... src/commands/AddObjectCommand.o"
 	@echo "... src/commands/AddObjectCommand.i"
 	@echo "... src/commands/AddObjectCommand.s"
+	@echo "... src/commands/ChangeFillCommand.o"
+	@echo "... src/commands/ChangeFillCommand.i"
+	@echo "... src/commands/ChangeFillCommand.s"
 	@echo "... src/commands/MoveCommand.o"
 	@echo "... src/commands/MoveCommand.i"
 	@echo "... src/commands/MoveCommand.s"
