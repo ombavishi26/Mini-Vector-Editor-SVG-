@@ -28,6 +28,9 @@ private:
     QAction* strokeAction;
     QAction* strokeWidthAction;
     QAction* rectAction;
+    //undo redo 
+    QAction* undoAction;
+    QAction* redoAction;
     //functions for connect 
     void onNewAction();
     void onSaveAction();
@@ -42,6 +45,9 @@ private:
     void onFillAction();
     void onStrokeAction();
     void onStrokeWidthAction();
+    //undo redo
+    void onUndoAction();
+    void onRedoAction();
 
 public:
     explicit Actions(MainWindow* w, Canvas* c);

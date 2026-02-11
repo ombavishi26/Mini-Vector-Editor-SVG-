@@ -45,7 +45,7 @@ void Canvas::mouseMoveEvent (QMouseEvent *event){
     }
     if (!drawing && currenttool != None){               //if tool selected then make obj
         current = create_shape(currenttool, pressPoint);
-        if (current){objects.push_back(current);}
+        if (current){executeCommand(new AddObjectCommand(objects,current));};
         drawing = true;
     }
     if (drawing && current){                            //after creating changing obj property
@@ -164,5 +164,34 @@ void Canvas::paste(){
     GraphicsObject* newObj = clipboard[0]->clone(lastPoint.x(), lastPoint.y());
     objects.push_back(newObj);
     current = newObj;
+    update();
+}
+
+void Canvas::executeCommand(Command* cmd){
+    cmd->execute();
+    undoStack.push_back(cmd);
+    for(auto c : redoStack){
+        delete c;
+        redoStack.clear();
+    }
+    update();
+}
+
+void Canvas::undo(){
+    if(undoStack.empty()) return;
+    Command* cmd = undoStack.back();
+    undoStack.pop_back();
+    cmd->undo();
+    redoStack.push_back(cmd);
+    update();
+}
+
+void Canvas::redo(){
+    // std::cout << "redo triggered";
+    if(redoStack.empty()) return;
+    Command* cmd = redoStack.back();
+    redoStack.pop_back();
+    cmd->execute();
+    undoStack.push_back(cmd);
     update();
 }

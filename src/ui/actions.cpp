@@ -44,6 +44,13 @@ void Actions::createMenus(QMenuBar* menuBar) {
     pasteAction = new QAction("Paste", this);
     menuBar -> addAction(pasteAction);
     connect(pasteAction, &QAction::triggered, this, &Actions::onPasteAction);
+    //undo redo
+    undoAction = new QAction("Undo",this);
+    menuBar -> addAction(undoAction);
+    connect(undoAction,&QAction::triggered, this, &Actions::onUndoAction);
+    redoAction = new QAction("Redo",this);
+    menuBar -> addAction(redoAction);
+    connect(redoAction, &QAction::triggered, this, &Actions::onRedoAction);
 }
 
 void Actions::createToolBar(QToolBar* toolBar) {
@@ -128,3 +135,7 @@ void Actions::onStrokeWidthAction() {
     double w = QInputDialog::getDouble(mainwindow,"Stroke Width","Enter stroke width:",1.0,0.1,100.0,1, &ok);
     if (ok) {canvas->setStrokeWidth(w);}
 }
+
+//unod redo
+void Actions::onUndoAction(){canvas -> undo();}
+void Actions::onRedoAction(){canvas -> redo();}

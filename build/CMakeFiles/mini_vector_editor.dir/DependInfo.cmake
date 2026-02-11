@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp" "CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/Objects/text.cpp" "CMakeFiles/mini_vector_editor.dir/src/Objects/text.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/Objects/text.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp" "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o.d"
+  "/home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.cpp" "CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserCircle.cpp" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserLine.cpp" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserPath.cpp" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.o.d"

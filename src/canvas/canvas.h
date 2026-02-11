@@ -4,6 +4,8 @@
 #include "../Objects/Object.h"
 #include "../io/SvgSaver.h" 
 #include "../io/Parser/ParserSvg.h"
+#include "../commands/Command.h"
+#include "../commands/AddObjectCommand.h"
 // #include <QPainter>
 
 class Canvas : public QWidget {
@@ -28,6 +30,11 @@ private:
     void mouseMoveEvent (QMouseEvent* event) override;
     void mouseReleaseEvent(QMouseEvent* event) override;
     void paintEvent(QPaintEvent*) override; 
+    //undo redo
+    std::vector<Command*> undoStack;
+    std::vector<Command*> redoStack;
+    //execute comandd
+    void executeCommand(Command* cmd);
     
     //create objects
     GraphicsObject* create_shape(ToolType type, const QPoint& start);
@@ -48,4 +55,7 @@ public:
     void cut();
     void copy();
     void paste();
+    //unod redo 
+    void undo();
+    void redo();
 };

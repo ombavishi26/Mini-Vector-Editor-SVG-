@@ -347,6 +347,30 @@ src/canvas/canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s
 .PHONY : src/canvas/canvas.cpp.s
 
+src/commands/AddObjectCommand.o: src/commands/AddObjectCommand.cpp.o
+.PHONY : src/commands/AddObjectCommand.o
+
+# target to build an object file
+src/commands/AddObjectCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.o
+.PHONY : src/commands/AddObjectCommand.cpp.o
+
+src/commands/AddObjectCommand.i: src/commands/AddObjectCommand.cpp.i
+.PHONY : src/commands/AddObjectCommand.i
+
+# target to preprocess a source file
+src/commands/AddObjectCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.i
+.PHONY : src/commands/AddObjectCommand.cpp.i
+
+src/commands/AddObjectCommand.s: src/commands/AddObjectCommand.cpp.s
+.PHONY : src/commands/AddObjectCommand.s
+
+# target to generate assembly for a file
+src/commands/AddObjectCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.s
+.PHONY : src/commands/AddObjectCommand.cpp.s
+
 src/io/Parser/ParserCircle.o: src/io/Parser/ParserCircle.cpp.o
 .PHONY : src/io/Parser/ParserCircle.o
 
@@ -646,6 +670,9 @@ help:
 	@echo "... src/canvas/canvas.o"
 	@echo "... src/canvas/canvas.i"
 	@echo "... src/canvas/canvas.s"
+	@echo "... src/commands/AddObjectCommand.o"
+	@echo "... src/commands/AddObjectCommand.i"
+	@echo "... src/commands/AddObjectCommand.s"
 	@echo "... src/io/Parser/ParserCircle.o"
 	@echo "... src/io/Parser/ParserCircle.i"
 	@echo "... src/io/Parser/ParserCircle.s"

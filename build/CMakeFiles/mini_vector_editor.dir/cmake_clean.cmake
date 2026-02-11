@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_vector_editor.dir/src/Objects/text.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o.d"
+  "CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.o"
+  "CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.o"

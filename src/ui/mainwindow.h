@@ -5,6 +5,7 @@
 #include <QMenuBar>
 #include <QMenu>
 #include "../canvas/canvas.h"
+#include "../commands/Command.h"
 #include <QInputDialog>
 #include <QColorDialog>
 #include <QAction>
