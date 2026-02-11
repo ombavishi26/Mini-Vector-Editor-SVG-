@@ -30,6 +30,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_vector_editor.dir/src/commands/CutCommand.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.o.d"
+  "CMakeFiles/mini_vector_editor.dir/src/commands/PasteCommand.cpp.o"
+  "CMakeFiles/mini_vector_editor.dir/src/commands/PasteCommand.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.o"

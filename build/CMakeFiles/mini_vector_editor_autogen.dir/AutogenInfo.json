@@ -269,6 +269,12 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/PasteCommand.h",
+			"MU",
+			"6JCNSNR7WH/moc_PasteCommand.cpp",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserSvg.h",
 			"MU",
 			"2A6OOK6OSA/moc_ParserSvg.cpp",
@@ -414,6 +420,11 @@
 		],
 		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/PasteCommand.cpp",
 			"MU",
 			null
 		],

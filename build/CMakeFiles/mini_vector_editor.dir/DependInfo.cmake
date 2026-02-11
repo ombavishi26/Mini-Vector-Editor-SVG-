@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/om/main/COP290/mini_vector_editor/src/commands/ChangeSwCommand.cpp" "CMakeFiles/mini_vector_editor.dir/src/commands/ChangeSwCommand.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/commands/ChangeSwCommand.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/commands/CutCommand.cpp" "CMakeFiles/mini_vector_editor.dir/src/commands/CutCommand.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/commands/CutCommand.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.cpp" "CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/commands/MoveCommand.cpp.o.d"
+  "/home/om/main/COP290/mini_vector_editor/src/commands/PasteCommand.cpp" "CMakeFiles/mini_vector_editor.dir/src/commands/PasteCommand.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/commands/PasteCommand.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserCircle.cpp" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserLine.cpp" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.o.d"
   "/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserPath.cpp" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.o" "gcc" "CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.o.d"

@@ -168,7 +168,7 @@ void Canvas::copy(){
 void Canvas::paste(){
     if (clipboard.empty()) return;
     GraphicsObject* newObj = clipboard[0]->clone(lastPoint.x(), lastPoint.y());
-    objects.push_back(newObj);
+    executeCommand(new PasteCommand(objects, newObj));
     current = newObj;
     update();
 }
