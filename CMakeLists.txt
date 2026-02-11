@@ -17,8 +17,19 @@ add_executable(mini_vector_editor
     src/canvas/canvas.cpp
     src/Objects/GraphicsObject.cpp
     src/Objects/rect.cpp
+    src/Objects/circle.cpp
+    src/Objects/line.cpp
+    src/Objects/path.cpp
+    src/Objects/text.cpp
     src/ui/actions.cpp
     src/io/SvgSaver.cpp
+    src/io/Parser/ParserSvg.cpp
+    src/io/Parser/ParserCircle.cpp
+    src/io/Parser/ParserLine.cpp
+    src/io/Parser/ParserPath.cpp
+    src/io/Parser/ParserRect.cpp
+    src/io/Parser/ParserText.cpp
+    src/io/Parser/ParserUtils.cpp
 )
 
 target_include_directories(mini_vector_editor PRIVATE src)

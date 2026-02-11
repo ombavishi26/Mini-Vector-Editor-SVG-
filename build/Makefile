@@ -203,6 +203,78 @@ src/Objects/GraphicsObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/GraphicsObject.cpp.s
 .PHONY : src/Objects/GraphicsObject.cpp.s
 
+src/Objects/circle.o: src/Objects/circle.cpp.o
+.PHONY : src/Objects/circle.o
+
+# target to build an object file
+src/Objects/circle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/circle.cpp.o
+.PHONY : src/Objects/circle.cpp.o
+
+src/Objects/circle.i: src/Objects/circle.cpp.i
+.PHONY : src/Objects/circle.i
+
+# target to preprocess a source file
+src/Objects/circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/circle.cpp.i
+.PHONY : src/Objects/circle.cpp.i
+
+src/Objects/circle.s: src/Objects/circle.cpp.s
+.PHONY : src/Objects/circle.s
+
+# target to generate assembly for a file
+src/Objects/circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/circle.cpp.s
+.PHONY : src/Objects/circle.cpp.s
+
+src/Objects/line.o: src/Objects/line.cpp.o
+.PHONY : src/Objects/line.o
+
+# target to build an object file
+src/Objects/line.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/line.cpp.o
+.PHONY : src/Objects/line.cpp.o
+
+src/Objects/line.i: src/Objects/line.cpp.i
+.PHONY : src/Objects/line.i
+
+# target to preprocess a source file
+src/Objects/line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/line.cpp.i
+.PHONY : src/Objects/line.cpp.i
+
+src/Objects/line.s: src/Objects/line.cpp.s
+.PHONY : src/Objects/line.s
+
+# target to generate assembly for a file
+src/Objects/line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/line.cpp.s
+.PHONY : src/Objects/line.cpp.s
+
+src/Objects/path.o: src/Objects/path.cpp.o
+.PHONY : src/Objects/path.o
+
+# target to build an object file
+src/Objects/path.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/path.cpp.o
+.PHONY : src/Objects/path.cpp.o
+
+src/Objects/path.i: src/Objects/path.cpp.i
+.PHONY : src/Objects/path.i
+
+# target to preprocess a source file
+src/Objects/path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/path.cpp.i
+.PHONY : src/Objects/path.cpp.i
+
+src/Objects/path.s: src/Objects/path.cpp.s
+.PHONY : src/Objects/path.s
+
+# target to generate assembly for a file
+src/Objects/path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/path.cpp.s
+.PHONY : src/Objects/path.cpp.s
+
 src/Objects/rect.o: src/Objects/rect.cpp.o
 .PHONY : src/Objects/rect.o
 
@@ -227,6 +299,30 @@ src/Objects/rect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.s
 .PHONY : src/Objects/rect.cpp.s
 
+src/Objects/text.o: src/Objects/text.cpp.o
+.PHONY : src/Objects/text.o
+
+# target to build an object file
+src/Objects/text.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/text.cpp.o
+.PHONY : src/Objects/text.cpp.o
+
+src/Objects/text.i: src/Objects/text.cpp.i
+.PHONY : src/Objects/text.i
+
+# target to preprocess a source file
+src/Objects/text.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/text.cpp.i
+.PHONY : src/Objects/text.cpp.i
+
+src/Objects/text.s: src/Objects/text.cpp.s
+.PHONY : src/Objects/text.s
+
+# target to generate assembly for a file
+src/Objects/text.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/text.cpp.s
+.PHONY : src/Objects/text.cpp.s
+
 src/canvas/canvas.o: src/canvas/canvas.cpp.o
 .PHONY : src/canvas/canvas.o
 
@@ -250,6 +346,174 @@ src/canvas/canvas.s: src/canvas/canvas.cpp.s
 src/canvas/canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s
 .PHONY : src/canvas/canvas.cpp.s
+
+src/io/Parser/ParserCircle.o: src/io/Parser/ParserCircle.cpp.o
+.PHONY : src/io/Parser/ParserCircle.o
+
+# target to build an object file
+src/io/Parser/ParserCircle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.o
+.PHONY : src/io/Parser/ParserCircle.cpp.o
+
+src/io/Parser/ParserCircle.i: src/io/Parser/ParserCircle.cpp.i
+.PHONY : src/io/Parser/ParserCircle.i
+
+# target to preprocess a source file
+src/io/Parser/ParserCircle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.i
+.PHONY : src/io/Parser/ParserCircle.cpp.i
+
+src/io/Parser/ParserCircle.s: src/io/Parser/ParserCircle.cpp.s
+.PHONY : src/io/Parser/ParserCircle.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserCircle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.s
+.PHONY : src/io/Parser/ParserCircle.cpp.s
+
+src/io/Parser/ParserLine.o: src/io/Parser/ParserLine.cpp.o
+.PHONY : src/io/Parser/ParserLine.o
+
+# target to build an object file
+src/io/Parser/ParserLine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.o
+.PHONY : src/io/Parser/ParserLine.cpp.o
+
+src/io/Parser/ParserLine.i: src/io/Parser/ParserLine.cpp.i
+.PHONY : src/io/Parser/ParserLine.i
+
+# target to preprocess a source file
+src/io/Parser/ParserLine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.i
+.PHONY : src/io/Parser/ParserLine.cpp.i
+
+src/io/Parser/ParserLine.s: src/io/Parser/ParserLine.cpp.s
+.PHONY : src/io/Parser/ParserLine.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserLine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserLine.cpp.s
+.PHONY : src/io/Parser/ParserLine.cpp.s
+
+src/io/Parser/ParserPath.o: src/io/Parser/ParserPath.cpp.o
+.PHONY : src/io/Parser/ParserPath.o
+
+# target to build an object file
+src/io/Parser/ParserPath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.o
+.PHONY : src/io/Parser/ParserPath.cpp.o
+
+src/io/Parser/ParserPath.i: src/io/Parser/ParserPath.cpp.i
+.PHONY : src/io/Parser/ParserPath.i
+
+# target to preprocess a source file
+src/io/Parser/ParserPath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.i
+.PHONY : src/io/Parser/ParserPath.cpp.i
+
+src/io/Parser/ParserPath.s: src/io/Parser/ParserPath.cpp.s
+.PHONY : src/io/Parser/ParserPath.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserPath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.s
+.PHONY : src/io/Parser/ParserPath.cpp.s
+
+src/io/Parser/ParserRect.o: src/io/Parser/ParserRect.cpp.o
+.PHONY : src/io/Parser/ParserRect.o
+
+# target to build an object file
+src/io/Parser/ParserRect.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserRect.cpp.o
+.PHONY : src/io/Parser/ParserRect.cpp.o
+
+src/io/Parser/ParserRect.i: src/io/Parser/ParserRect.cpp.i
+.PHONY : src/io/Parser/ParserRect.i
+
+# target to preprocess a source file
+src/io/Parser/ParserRect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserRect.cpp.i
+.PHONY : src/io/Parser/ParserRect.cpp.i
+
+src/io/Parser/ParserRect.s: src/io/Parser/ParserRect.cpp.s
+.PHONY : src/io/Parser/ParserRect.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserRect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserRect.cpp.s
+.PHONY : src/io/Parser/ParserRect.cpp.s
+
+src/io/Parser/ParserSvg.o: src/io/Parser/ParserSvg.cpp.o
+.PHONY : src/io/Parser/ParserSvg.o
+
+# target to build an object file
+src/io/Parser/ParserSvg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserSvg.cpp.o
+.PHONY : src/io/Parser/ParserSvg.cpp.o
+
+src/io/Parser/ParserSvg.i: src/io/Parser/ParserSvg.cpp.i
+.PHONY : src/io/Parser/ParserSvg.i
+
+# target to preprocess a source file
+src/io/Parser/ParserSvg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserSvg.cpp.i
+.PHONY : src/io/Parser/ParserSvg.cpp.i
+
+src/io/Parser/ParserSvg.s: src/io/Parser/ParserSvg.cpp.s
+.PHONY : src/io/Parser/ParserSvg.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserSvg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserSvg.cpp.s
+.PHONY : src/io/Parser/ParserSvg.cpp.s
+
+src/io/Parser/ParserText.o: src/io/Parser/ParserText.cpp.o
+.PHONY : src/io/Parser/ParserText.o
+
+# target to build an object file
+src/io/Parser/ParserText.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserText.cpp.o
+.PHONY : src/io/Parser/ParserText.cpp.o
+
+src/io/Parser/ParserText.i: src/io/Parser/ParserText.cpp.i
+.PHONY : src/io/Parser/ParserText.i
+
+# target to preprocess a source file
+src/io/Parser/ParserText.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserText.cpp.i
+.PHONY : src/io/Parser/ParserText.cpp.i
+
+src/io/Parser/ParserText.s: src/io/Parser/ParserText.cpp.s
+.PHONY : src/io/Parser/ParserText.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserText.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserText.cpp.s
+.PHONY : src/io/Parser/ParserText.cpp.s
+
+src/io/Parser/ParserUtils.o: src/io/Parser/ParserUtils.cpp.o
+.PHONY : src/io/Parser/ParserUtils.o
+
+# target to build an object file
+src/io/Parser/ParserUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserUtils.cpp.o
+.PHONY : src/io/Parser/ParserUtils.cpp.o
+
+src/io/Parser/ParserUtils.i: src/io/Parser/ParserUtils.cpp.i
+.PHONY : src/io/Parser/ParserUtils.i
+
+# target to preprocess a source file
+src/io/Parser/ParserUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserUtils.cpp.i
+.PHONY : src/io/Parser/ParserUtils.cpp.i
+
+src/io/Parser/ParserUtils.s: src/io/Parser/ParserUtils.cpp.s
+.PHONY : src/io/Parser/ParserUtils.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserUtils.cpp.s
+.PHONY : src/io/Parser/ParserUtils.cpp.s
 
 src/io/SvgSaver.o: src/io/SvgSaver.cpp.o
 .PHONY : src/io/SvgSaver.o
@@ -364,12 +628,45 @@ help:
 	@echo "... src/Objects/GraphicsObject.o"
 	@echo "... src/Objects/GraphicsObject.i"
 	@echo "... src/Objects/GraphicsObject.s"
+	@echo "... src/Objects/circle.o"
+	@echo "... src/Objects/circle.i"
+	@echo "... src/Objects/circle.s"
+	@echo "... src/Objects/line.o"
+	@echo "... src/Objects/line.i"
+	@echo "... src/Objects/line.s"
+	@echo "... src/Objects/path.o"
+	@echo "... src/Objects/path.i"
+	@echo "... src/Objects/path.s"
 	@echo "... src/Objects/rect.o"
 	@echo "... src/Objects/rect.i"
 	@echo "... src/Objects/rect.s"
+	@echo "... src/Objects/text.o"
+	@echo "... src/Objects/text.i"
+	@echo "... src/Objects/text.s"
 	@echo "... src/canvas/canvas.o"
 	@echo "... src/canvas/canvas.i"
 	@echo "... src/canvas/canvas.s"
+	@echo "... src/io/Parser/ParserCircle.o"
+	@echo "... src/io/Parser/ParserCircle.i"
+	@echo "... src/io/Parser/ParserCircle.s"
+	@echo "... src/io/Parser/ParserLine.o"
+	@echo "... src/io/Parser/ParserLine.i"
+	@echo "... src/io/Parser/ParserLine.s"
+	@echo "... src/io/Parser/ParserPath.o"
+	@echo "... src/io/Parser/ParserPath.i"
+	@echo "... src/io/Parser/ParserPath.s"
+	@echo "... src/io/Parser/ParserRect.o"
+	@echo "... src/io/Parser/ParserRect.i"
+	@echo "... src/io/Parser/ParserRect.s"
+	@echo "... src/io/Parser/ParserSvg.o"
+	@echo "... src/io/Parser/ParserSvg.i"
+	@echo "... src/io/Parser/ParserSvg.s"
+	@echo "... src/io/Parser/ParserText.o"
+	@echo "... src/io/Parser/ParserText.i"
+	@echo "... src/io/Parser/ParserText.s"
+	@echo "... src/io/Parser/ParserUtils.o"
+	@echo "... src/io/Parser/ParserUtils.i"
+	@echo "... src/io/Parser/ParserUtils.s"
 	@echo "... src/io/SvgSaver.o"
 	@echo "... src/io/SvgSaver.i"
 	@echo "... src/io/SvgSaver.s"

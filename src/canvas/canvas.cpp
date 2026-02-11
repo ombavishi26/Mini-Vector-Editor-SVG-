@@ -9,6 +9,7 @@ Canvas::Canvas(QWidget* parent) : QWidget(parent) {
     current = nullptr;
     setCursor(Qt::ArrowCursor);
     setMouseTracking(true);
+    currentfile = "";
 }
 
 //create onjects
@@ -109,7 +110,25 @@ void Canvas::newFile() {
     }
     objects.clear();
     current = nullptr;
+    currentfile = "";
     update();
+}
+
+void Canvas::openFile(const std::string& filename){
+    current = nullptr;
+    ParserSvg parser;
+    for (GraphicsObject* obj : objects) {
+        delete obj;
+    }
+    objects.clear();
+    objects = parser.load_svg(filename);
+    update();
+}
+
+void Canvas::saveFile(){
+    if (!currentfile.empty()) {
+        saveAs(currentfile);
+    }
 }
 
 void Canvas::saveAs(const std::string& filename){
@@ -117,4 +136,5 @@ void Canvas::saveAs(const std::string& filename){
     // std::cout << "Saving file: " << filename << std::endl;
     SvgSaver saver;
     saver.svg_saver(filename, objects);
+    currentfile = filename;
 }

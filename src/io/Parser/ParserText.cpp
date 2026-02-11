@@ -1,7 +1,7 @@
 #include "ParserSvg.h"
 
 //parsing text line of svg 
-text* parser_text(const std::string& input ,int pos,int i){
+text* ParserSvg::parser_text(const std::string& input ,int pos,int i){
     std::vector<std::pair<std::string,std::string>> properties;
     properties = seperate_text(input,pos); 
     text* t = new text();

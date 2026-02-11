@@ -9,6 +9,7 @@
   /home/om/main/COP290/mini_vector_editor/src/Objects/rect.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/text.h \
   /home/om/main/COP290/mini_vector_editor/src/canvas/canvas.h \
+  /home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserSvg.h \
   /home/om/main/COP290/mini_vector_editor/src/io/SvgSaver.h \
   /home/om/main/COP290/mini_vector_editor/src/ui/actions.h \
   /usr/include/alloca.h \

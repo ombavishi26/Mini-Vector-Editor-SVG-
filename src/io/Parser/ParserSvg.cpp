@@ -1,7 +1,7 @@
 #include "ParserSvg.h"
 
 //parsing initial line
-void parser_initial(const std::string& line, int i){
+void ParserSvg::parser_initial(const std::string& line, int i){
     //seeing <svg 
     if (line.find("<svg") != 0 ){
         std::cerr << "error on line " << i << "initial line must start with '<' " << std::endl;
@@ -16,7 +16,7 @@ void parser_initial(const std::string& line, int i){
     }
 }
 
-std::vector<GraphicsObject*> load_svg (const std::string& filename){
+std::vector<GraphicsObject*> ParserSvg::load_svg (const std::string& filename){
     std::ifstream file(filename);
     std::vector<GraphicsObject*> objects;
     //Checking for correctly open file

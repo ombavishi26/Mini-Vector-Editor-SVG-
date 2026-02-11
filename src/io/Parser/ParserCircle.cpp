@@ -2,7 +2,7 @@
 // using objcir = GraphicsObject::circle;
 
 //parsing circle line of svg syntax
-circle* parser_circle(const std::string& input ,int pos,int i){
+circle* ParserSvg::parser_circle(const std::string& input ,int pos,int i){
     std::vector<std::pair<std::string,std::string>> properties;
     properties = seperate (input,pos); 
     circle* cir = new circle();

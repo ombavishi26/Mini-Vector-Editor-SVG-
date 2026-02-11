@@ -1,7 +1,7 @@
 #include "ParserSvg.h"
 
 //parsing path syntax of svg 
-path* parser_path (const std::string& input , int pos, int i){
+path* ParserSvg::parser_path (const std::string& input , int pos, int i){
     std::vector<std::pair<std::string,std::string>> properties;
     properties = seperate (input,pos); 
     path* p = new path();

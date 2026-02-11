@@ -17,8 +17,14 @@ void Actions::createMenus(QMenuBar* menuBar) {
     newAction = new QAction("New", this);
     fileMenu -> addAction(newAction);
     connect(newAction, &QAction::triggered, this, &Actions::onNewAction);
-    fileMenu ->addAction("Open");
-    fileMenu ->addAction("Save");
+    //adding open action
+    openAction = new QAction("Open", this);
+    fileMenu -> addAction(openAction);
+    connect(openAction, &QAction::triggered, this, &Actions::onOpenAction);
+    //adding save option
+    saveAction = new QAction("Save", this);
+    fileMenu -> addAction(saveAction);
+    connect(saveAction, &QAction::triggered, this, &Actions::onSaveAction);
     //adding save as action
     saveAsAction = new QAction("Save As", this);
     fileMenu -> addAction(saveAsAction);
@@ -52,6 +58,22 @@ void Actions::createToolBar(QToolBar* toolBar) {
 void Actions::onNewAction() {
     auto reply = QMessageBox::question(mainwindow, "New Canvas", "Are you sure you want to create a new canvas? Unsaved changes will be lost.", QMessageBox::Yes | QMessageBox::No);
     if (reply == QMessageBox::Yes) {canvas->newFile();}
+}
+
+void Actions::onOpenAction(){
+    QString fileName = QFileDialog::getOpenFileName(mainwindow, "Open SVG", "", "SVG Files (*.svg)");
+    if (!fileName.isEmpty()) {
+        canvas->openFile(fileName.toStdString());
+    }
+}
+
+void Actions::onSaveAction() {
+    if (!canvas->hasCurrentFile()){
+        onSaveAsAction();
+    } 
+    else{
+        canvas->saveFile();
+    }
 }
 
 void Actions::onSaveAsAction() {

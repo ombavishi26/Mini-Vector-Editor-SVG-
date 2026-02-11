@@ -2,7 +2,7 @@
 
 //helper function to seperate properties and their values from a line
 //used for rect,circle,line,path
-std::vector<std::pair<std::string,std::string>> seperate (const std::string& line,int pos){
+std::vector<std::pair<std::string,std::string>> ParserSvg::seperate (const std::string& line,int pos){
     std::vector<std::pair<std::string,std::string>> properties;
     while (size_t(pos+2) < line.length() && line.substr(pos,2) != "/>"){
         std::pair<std::string,std::string> attribute;
@@ -27,7 +27,7 @@ std::vector<std::pair<std::string,std::string>> seperate (const std::string& lin
 }
 
 //helper for text parsing
-std::vector<std::pair<std::string,std::string>> seperate_text (const std::string& line,int pos ){
+std::vector<std::pair<std::string,std::string>> ParserSvg::seperate_text (const std::string& line,int pos ){
     std::vector<std::pair<std::string,std::string>> properties;
     std::pair<std::string,std::string> attribute;
 

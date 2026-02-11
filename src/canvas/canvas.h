@@ -3,6 +3,7 @@
 #include <QDebug>
 #include "../Objects/Object.h"
 #include "../io/SvgSaver.h" 
+#include "../io/Parser/ParserSvg.h"
 // #include <QPainter>
 
 class Canvas : public QWidget {
@@ -20,6 +21,7 @@ private:
     QPoint lastPoint;
     QPoint startPoint;
     QPoint endPoint;
+    std::string currentfile;
     //mouse events
     void mousePressEvent(QMouseEvent *event) override;
     void mouseMoveEvent (QMouseEvent* event) override;
@@ -37,5 +39,8 @@ public:
     void setFillColor(const std::string& color);
     void setStrokeColor(const std::string& color);
     void newFile();
+    void saveFile();
+    void openFile(const std::string& filename);
     void saveAs(const std::string& filename);
+    bool hasCurrentFile() const { return !currentfile.empty(); }
 };

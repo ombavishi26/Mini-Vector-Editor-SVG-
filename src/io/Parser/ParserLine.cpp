@@ -1,7 +1,7 @@
 #include "ParserSvg.h"
 
 //parsing line syntax of svg 
-line* parser_line (const std::string& input , int pos, int i){
+line* ParserSvg::parser_line (const std::string& input , int pos, int i){
     std::vector<std::pair<std::string,std::string>> properties;
     properties = seperate (input,pos); 
     line* lin = new line();

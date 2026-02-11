@@ -72,7 +72,7 @@ mini_vector_editor_autogen/timestamp: /usr/lib/qt6/libexec/moc
 mini_vector_editor_autogen/timestamp: /usr/lib/qt6/libexec/uic
 mini_vector_editor_autogen/timestamp: CMakeFiles/mini_vector_editor_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/om/main/COP290/mini_vector_editor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target mini_vector_editor"
-	/usr/bin/cmake -E cmake_autogen /home/om/main/COP290/mini_vector_editor/build/CMakeFiles/mini_vector_editor_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/om/main/COP290/mini_vector_editor/build/CMakeFiles/mini_vector_editor_autogen.dir/AutogenInfo.json Debug
 	/usr/bin/cmake -E touch /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/timestamp
 
 mini_vector_editor_autogen: CMakeFiles/mini_vector_editor_autogen
