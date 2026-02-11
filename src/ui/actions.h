@@ -15,12 +15,14 @@ private:
     Canvas * canvas;
     //actions
     QAction* newAction;
+    QAction* saveAsAction;
     QAction* fillAction;
     QAction* strokeAction;
     QAction* strokeWidthAction;
     QAction* rectAction;
     //functions for connect 
     void onNewAction();
+    void onSaveAsAction();
     void onFillAction();
     void onStrokeAction();
     void onStrokeWidthAction();

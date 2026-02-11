@@ -5,4 +5,7 @@
 #include <fstream>
 #include <algorithm>
 
-void save_svg(const std::string& filename, const std::vector<GraphicsObject*>& objects);
+class SvgSaver {
+public:
+    static void svg_saver(const std::string& filename, std::vector<GraphicsObject*>& objects);
+};

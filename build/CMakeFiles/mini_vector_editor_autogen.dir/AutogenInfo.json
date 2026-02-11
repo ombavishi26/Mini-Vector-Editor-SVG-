@@ -337,6 +337,12 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/io/SvgSaver.h",
+			"MU",
+			"F43WJJHJFQ/moc_SvgSaver.cpp",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/ui/actions.h",
 			"MU",
 			"YPKJ5OE7LN/moc_actions.cpp",
@@ -352,7 +358,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -420,6 +426,11 @@
 		],
 		[
 			"/home/om/main/COP290/mini_vector_editor/src/canvas/canvas.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/om/main/COP290/mini_vector_editor/src/io/SvgSaver.cpp",
 			"MU",
 			null
 		],

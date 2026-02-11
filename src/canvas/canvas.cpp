@@ -111,3 +111,10 @@ void Canvas::newFile() {
     current = nullptr;
     update();
 }
+
+void Canvas::saveAs(const std::string& filename){
+    qDebug() << "Saving file: " << filename.c_str();
+    // std::cout << "Saving file: " << filename << std::endl;
+    SvgSaver saver;
+    saver.svg_saver(filename, objects);
+}

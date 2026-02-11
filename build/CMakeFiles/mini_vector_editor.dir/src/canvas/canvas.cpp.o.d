@@ -359,6 +359,11 @@ CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/line.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/path.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/text.h \
+ /home/om/main/COP290/mini_vector_editor/src/canvas/../io/SvgSaver.h \
+ /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \

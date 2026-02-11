@@ -18,6 +18,7 @@ add_executable(mini_vector_editor
     src/Objects/GraphicsObject.cpp
     src/Objects/rect.cpp
     src/ui/actions.cpp
+    src/io/SvgSaver.cpp
 )
 
 target_include_directories(mini_vector_editor PRIVATE src)

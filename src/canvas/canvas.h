@@ -2,6 +2,7 @@
 #include <QWidget>
 #include <QDebug>
 #include "../Objects/Object.h"
+#include "../io/SvgSaver.h" 
 // #include <QPainter>
 
 class Canvas : public QWidget {
@@ -36,4 +37,5 @@ public:
     void setFillColor(const std::string& color);
     void setStrokeColor(const std::string& color);
     void newFile();
+    void saveAs(const std::string& filename);
 };

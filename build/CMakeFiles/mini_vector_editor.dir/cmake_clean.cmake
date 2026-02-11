@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_vector_editor.dir/src/Objects/rect.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o.d"
+  "CMakeFiles/mini_vector_editor.dir/src/io/SvgSaver.cpp.o"
+  "CMakeFiles/mini_vector_editor.dir/src/io/SvgSaver.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/main.cpp.o"
   "CMakeFiles/mini_vector_editor.dir/src/main.cpp.o.d"
   "CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o"

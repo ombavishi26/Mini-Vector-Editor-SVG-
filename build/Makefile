@@ -251,6 +251,30 @@ src/canvas/canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.s
 .PHONY : src/canvas/canvas.cpp.s
 
+src/io/SvgSaver.o: src/io/SvgSaver.cpp.o
+.PHONY : src/io/SvgSaver.o
+
+# target to build an object file
+src/io/SvgSaver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/SvgSaver.cpp.o
+.PHONY : src/io/SvgSaver.cpp.o
+
+src/io/SvgSaver.i: src/io/SvgSaver.cpp.i
+.PHONY : src/io/SvgSaver.i
+
+# target to preprocess a source file
+src/io/SvgSaver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/SvgSaver.cpp.i
+.PHONY : src/io/SvgSaver.cpp.i
+
+src/io/SvgSaver.s: src/io/SvgSaver.cpp.s
+.PHONY : src/io/SvgSaver.s
+
+# target to generate assembly for a file
+src/io/SvgSaver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/SvgSaver.cpp.s
+.PHONY : src/io/SvgSaver.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -346,6 +370,9 @@ help:
 	@echo "... src/canvas/canvas.o"
 	@echo "... src/canvas/canvas.i"
 	@echo "... src/canvas/canvas.s"
+	@echo "... src/io/SvgSaver.o"
+	@echo "... src/io/SvgSaver.i"
+	@echo "... src/io/SvgSaver.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
