@@ -330,6 +330,7 @@ CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/rect.h \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/circle.h \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/line.h \
+ /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/path.h \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/text.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \

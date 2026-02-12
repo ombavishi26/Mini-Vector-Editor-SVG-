@@ -18,6 +18,7 @@ add_executable(mini_vector_editor
     src/Objects/GraphicsObject.cpp
     src/Objects/rect.cpp
     src/Objects/circle.cpp
+    src/Objects/hexagon.cpp
     src/Objects/line.cpp
     src/Objects/path.cpp
     src/Objects/text.cpp
@@ -25,6 +26,7 @@ add_executable(mini_vector_editor
     src/io/SvgSaver.cpp
     src/io/Parser/ParserSvg.cpp
     src/io/Parser/ParserCircle.cpp
+    src/io/Parser/ParserHexagon.cpp
     src/io/Parser/ParserLine.cpp
     src/io/Parser/ParserPath.cpp
     src/io/Parser/ParserRect.cpp

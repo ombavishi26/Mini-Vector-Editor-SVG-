@@ -19,6 +19,12 @@ namespace Default{
         constexpr float cx = 0.0;
         constexpr float cy = 0.0;
     }
+
+    namespace Hexagon{
+        constexpr float r = 10.0;
+        constexpr float cx = 0.0;
+        constexpr float cy = 0.0;
+    }
     
     namespace line{
         constexpr float x1 = 0.0;

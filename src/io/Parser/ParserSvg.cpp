@@ -55,6 +55,9 @@ std::vector<GraphicsObject*> ParserSvg::load_svg (const std::string& filename){
         else if (obj_type == "line"){
             objects.push_back(parser_line(line,pos_s+1,err_index));
         }
+        if (obj_type == "hexagon"){
+            objects.push_back(parser_hexagon(line,pos_s+1,err_index));
+        }
         else if (obj_type == "path"){
             objects.push_back(parser_path(line,pos_s+1,err_index));
         }

@@ -1,6 +1,6 @@
 #include "ParserSvg.h"
 
-//parsing text line of svg 
+//parsing text Line of svg 
 text* ParserSvg::parser_text(const std::string& input ,int pos,int i){
     std::vector<std::pair<std::string,std::string>> properties;
     properties = seperate_text(input,pos); 
@@ -37,7 +37,7 @@ text* ParserSvg::parser_text(const std::string& input ,int pos,int i){
             t->set_sw(std::stof(attribute.second));
         }
         else {
-            std::cerr << "Error at line " << i << ": unknown attribute '" << attribute.first << std::endl;
+            std::cerr << "Error at Line " << i << ": unknown attribute '" << attribute.first << std::endl;
             delete t;
             exit(1);
             return nullptr;

@@ -17,14 +17,15 @@ Canvas::Canvas(QWidget* parent) : QWidget(parent) {
 GraphicsObject* Canvas::create_shape(ToolType type, const QPoint& start){
     if (type == Rectangle_type){return new Rect(0,0,start.x(),start.y(),0,0,"black","none",1);}
     else if (type == Circle_type){return new Circle(0,start.x(),start.y(),"black","none",1);}
+    else if (type == Line_type){return new Line(start.x(),start.y(),start.x(),start.y(),"black",1);}
+    else if (type == Hexagon_type){return new Hexagon(0,start.x(),start.y(),"black","none",1);}
     return nullptr;
 }
 //setting rect if rect pressed in toolbar
-void Canvas::setRectMode (bool toogle){
-    if (toogle){currenttool = Rectangle_type;update();}
-    else {currenttool = None;}
-}
+void Canvas::setRectMode (){currenttool = Rectangle_type;update();}
 void Canvas::setCircleMode(){currenttool = Circle_type;update();}
+void Canvas::setLineMode(){currenttool = Line_type; update();}
+void Canvas::setHexagonMode(){currenttool = Hexagon_type;update();}
 
 void Canvas::mousePressEvent(QMouseEvent *event){
     if (event->button() != Qt::LeftButton) return;

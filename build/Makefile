@@ -227,6 +227,30 @@ src/Objects/circle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/circle.cpp.s
 .PHONY : src/Objects/circle.cpp.s
 
+src/Objects/hexagon.o: src/Objects/hexagon.cpp.o
+.PHONY : src/Objects/hexagon.o
+
+# target to build an object file
+src/Objects/hexagon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/hexagon.cpp.o
+.PHONY : src/Objects/hexagon.cpp.o
+
+src/Objects/hexagon.i: src/Objects/hexagon.cpp.i
+.PHONY : src/Objects/hexagon.i
+
+# target to preprocess a source file
+src/Objects/hexagon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/hexagon.cpp.i
+.PHONY : src/Objects/hexagon.cpp.i
+
+src/Objects/hexagon.s: src/Objects/hexagon.cpp.s
+.PHONY : src/Objects/hexagon.s
+
+# target to generate assembly for a file
+src/Objects/hexagon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/hexagon.cpp.s
+.PHONY : src/Objects/hexagon.cpp.s
+
 src/Objects/line.o: src/Objects/line.cpp.o
 .PHONY : src/Objects/line.o
 
@@ -587,6 +611,30 @@ src/io/Parser/ParserCircle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserCircle.cpp.s
 .PHONY : src/io/Parser/ParserCircle.cpp.s
 
+src/io/Parser/ParserHexagon.o: src/io/Parser/ParserHexagon.cpp.o
+.PHONY : src/io/Parser/ParserHexagon.o
+
+# target to build an object file
+src/io/Parser/ParserHexagon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserHexagon.cpp.o
+.PHONY : src/io/Parser/ParserHexagon.cpp.o
+
+src/io/Parser/ParserHexagon.i: src/io/Parser/ParserHexagon.cpp.i
+.PHONY : src/io/Parser/ParserHexagon.i
+
+# target to preprocess a source file
+src/io/Parser/ParserHexagon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserHexagon.cpp.i
+.PHONY : src/io/Parser/ParserHexagon.cpp.i
+
+src/io/Parser/ParserHexagon.s: src/io/Parser/ParserHexagon.cpp.s
+.PHONY : src/io/Parser/ParserHexagon.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserHexagon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserHexagon.cpp.s
+.PHONY : src/io/Parser/ParserHexagon.cpp.s
+
 src/io/Parser/ParserLine.o: src/io/Parser/ParserLine.cpp.o
 .PHONY : src/io/Parser/ParserLine.o
 
@@ -847,6 +895,9 @@ help:
 	@echo "... src/Objects/circle.o"
 	@echo "... src/Objects/circle.i"
 	@echo "... src/Objects/circle.s"
+	@echo "... src/Objects/hexagon.o"
+	@echo "... src/Objects/hexagon.i"
+	@echo "... src/Objects/hexagon.s"
 	@echo "... src/Objects/line.o"
 	@echo "... src/Objects/line.i"
 	@echo "... src/Objects/line.s"
@@ -892,6 +943,9 @@ help:
 	@echo "... src/io/Parser/ParserCircle.o"
 	@echo "... src/io/Parser/ParserCircle.i"
 	@echo "... src/io/Parser/ParserCircle.s"
+	@echo "... src/io/Parser/ParserHexagon.o"
+	@echo "... src/io/Parser/ParserHexagon.i"
+	@echo "... src/io/Parser/ParserHexagon.s"
 	@echo "... src/io/Parser/ParserLine.o"
 	@echo "... src/io/Parser/ParserLine.i"
 	@echo "... src/io/Parser/ParserLine.s"

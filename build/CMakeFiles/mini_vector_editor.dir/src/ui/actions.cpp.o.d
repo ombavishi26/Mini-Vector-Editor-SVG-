@@ -379,6 +379,7 @@ CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../Objects/rect.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../Objects/circle.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../Objects/line.h \
+ /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../Objects/path.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../Objects/text.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../io/SvgSaver.h \

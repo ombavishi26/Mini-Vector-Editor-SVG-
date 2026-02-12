@@ -10,6 +10,8 @@ mini_vector_editor_autogen/timestamp: \
 	/home/om/main/COP290/mini_vector_editor/src/Objects/circle.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/Objects/circle.h \
 	/home/om/main/COP290/mini_vector_editor/src/Objects/config/Default.h \
+	/home/om/main/COP290/mini_vector_editor/src/Objects/hexagon.cpp \
+	/home/om/main/COP290/mini_vector_editor/src/Objects/hexagon.h \
 	/home/om/main/COP290/mini_vector_editor/src/Objects/line.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/Objects/line.h \
 	/home/om/main/COP290/mini_vector_editor/src/Objects/path.cpp \
@@ -40,6 +42,7 @@ mini_vector_editor_autogen/timestamp: \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ResizeCommand.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ResizeCommand.h \
 	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserCircle.cpp \
+	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserHexagon.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserLine.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserPath.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserRect.cpp \

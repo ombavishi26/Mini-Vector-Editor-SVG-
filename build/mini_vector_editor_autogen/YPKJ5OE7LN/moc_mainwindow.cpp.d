@@ -4,6 +4,7 @@
   /home/om/main/COP290/mini_vector_editor/src/Objects/Object.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/circle.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/config/Default.h \
+  /home/om/main/COP290/mini_vector_editor/src/Objects/hexagon.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/line.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/path.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/rect.h \

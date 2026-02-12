@@ -362,6 +362,7 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/rect.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/circle.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/line.h \
+ /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/path.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/text.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../io/SvgSaver.h \

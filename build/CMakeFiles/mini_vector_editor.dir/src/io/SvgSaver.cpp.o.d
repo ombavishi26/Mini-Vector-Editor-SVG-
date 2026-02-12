@@ -330,6 +330,7 @@ CMakeFiles/mini_vector_editor.dir/src/io/SvgSaver.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/io/../Objects/rect.h \
  /home/om/main/COP290/mini_vector_editor/src/io/../Objects/circle.h \
  /home/om/main/COP290/mini_vector_editor/src/io/../Objects/line.h \
+ /home/om/main/COP290/mini_vector_editor/src/io/../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/src/io/../Objects/path.h \
  /home/om/main/COP290/mini_vector_editor/src/io/../Objects/text.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \

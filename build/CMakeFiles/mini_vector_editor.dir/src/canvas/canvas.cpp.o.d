@@ -357,6 +357,7 @@ CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/rect.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/circle.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/line.h \
+ /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/path.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/text.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../io/SvgSaver.h \

@@ -20,8 +20,10 @@ private:
     Rect* parser_rect(const std::string& input,int pos, int i);
     //parsing circle line and return pointer of ciircle
     Circle* parser_circle(const std::string& input, int pos, int i);
-    //parsing line and return pointer of line
-    line* parser_line (const std::string& input , int pos, int i);
+    //parsing line and return pointer of Line
+    Line* parser_line (const std::string& input , int pos, int i);
+    //parsing hexagon
+    Hexagon* parser_hexagon(const std::string& input, int pos, int i);
     //parsing path and return pointer of path
     path* parser_path (const std::string& input , int pos, int i);
     //parsing text and return pointer of text

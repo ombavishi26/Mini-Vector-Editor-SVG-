@@ -30,6 +30,8 @@ private:
     //shapes
     QAction* rectAction;
     QAction* circelAction;
+    QAction* lineAction;
+    QAction* hexagonAction;
     //undo redo 
     QAction* undoAction;
     QAction* redoAction;

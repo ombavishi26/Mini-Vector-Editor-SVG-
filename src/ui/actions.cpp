@@ -61,12 +61,20 @@ void Actions::createToolBar(QToolBar* toolBar) {
     //action for drawing rect
     rectAction = new QAction("Rectangle", this);
     rectAction -> setCheckable(true);
-    connect (rectAction, &QAction::toggled, canvas, &Canvas::setRectMode);
+    connect (rectAction, &QAction::triggered, canvas, &Canvas::setRectMode);
     toolBar -> addAction(rectAction);
     //circle
     circelAction = new QAction ("Circle",this);
     connect(circelAction, &QAction::triggered, canvas, &Canvas::setCircleMode);
     toolBar->addAction(circelAction);
+    //hexagon
+    hexagonAction = new QAction ("Hexagon",this);
+    connect(hexagonAction, &QAction::triggered, canvas, &Canvas::setHexagonMode);
+    toolBar->addAction(hexagonAction);
+    //line
+    lineAction = new QAction("Line",this);
+    connect(lineAction, &QAction::triggered, canvas, &Canvas::setLineMode);
+    toolBar->addAction(lineAction);
     //action for fill
     fillAction = new QAction("Fill", this);
     toolBar -> addAction(fillAction);
