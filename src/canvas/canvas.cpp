@@ -15,6 +15,7 @@ Canvas::Canvas(QWidget* parent) : QWidget(parent) {
 //create onjects
 GraphicsObject* Canvas::create_shape(ToolType type, const QPoint& start){
     if (type == Rectangle){return new Rect(0,0,start.x(),start.y(),0,0,"black","none",1);}
+    else if (type == Circle_type){return new Circle(0,start.x(),start.y(),"black","none",1);}
     return nullptr;
 }
 //setting rect if rect pressed in toolbar
@@ -22,6 +23,7 @@ void Canvas::setRectMode (bool toogle){
     if (toogle){currenttool = Rectangle;update();}
     else {currenttool = None;}
 }
+void Canvas::setCircleMode(){currenttool = Circle_type;update();}
 
 void Canvas::mousePressEvent(QMouseEvent *event){
     if (event->button() != Qt::LeftButton) return;

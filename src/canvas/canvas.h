@@ -18,7 +18,7 @@
 class Canvas : public QWidget {
 private:
     Q_OBJECT
-    enum ToolType {None, Rectangle , Circle, Line};
+    enum ToolType {None, Rectangle , Circle_type, Line};
     ToolType currenttool;
     std::vector<GraphicsObject*> objects;
     std::vector<GraphicsObject*> clipboard;
@@ -52,6 +52,7 @@ public:
     Canvas(QWidget* parent);
     ~Canvas() = default;
     void setRectMode(bool toogle);
+    void setCircleMode();
     //style objects
     void setStrokeWidth(float w);
     void setFillColor(const std::string& color);

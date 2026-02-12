@@ -61,9 +61,12 @@ void Actions::createToolBar(QToolBar* toolBar) {
     //action for drawing rect
     rectAction = new QAction("Rectangle", this);
     rectAction -> setCheckable(true);
-    //set current tool to rect mode
     connect (rectAction, &QAction::toggled, canvas, &Canvas::setRectMode);
     toolBar -> addAction(rectAction);
+    //circle
+    circelAction = new QAction ("Circle",this);
+    connect(circelAction, &QAction::triggered, canvas, &Canvas::setCircleMode);
+    toolBar->addAction(circelAction);
     //action for fill
     fillAction = new QAction("Fill", this);
     toolBar -> addAction(fillAction);

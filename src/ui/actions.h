@@ -27,7 +27,9 @@ private:
     QAction* fillAction;
     QAction* strokeAction;
     QAction* strokeWidthAction;
+    //shapes
     QAction* rectAction;
+    QAction* circelAction;
     //undo redo 
     QAction* undoAction;
     QAction* redoAction;
