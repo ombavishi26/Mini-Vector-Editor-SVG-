@@ -4,6 +4,7 @@
 #include "../Objects/rect.h"
 Canvas::Canvas(QWidget* parent) : QWidget(parent) {
     currenttool = None;
+    activehandle = None_handle;
     drawing = false;
     dragging = false;
     current = nullptr;
@@ -14,13 +15,13 @@ Canvas::Canvas(QWidget* parent) : QWidget(parent) {
 
 //create onjects
 GraphicsObject* Canvas::create_shape(ToolType type, const QPoint& start){
-    if (type == Rectangle){return new Rect(0,0,start.x(),start.y(),0,0,"black","none",1);}
+    if (type == Rectangle_type){return new Rect(0,0,start.x(),start.y(),0,0,"black","none",1);}
     else if (type == Circle_type){return new Circle(0,start.x(),start.y(),"black","none",1);}
     return nullptr;
 }
 //setting rect if rect pressed in toolbar
 void Canvas::setRectMode (bool toogle){
-    if (toogle){currenttool = Rectangle;update();}
+    if (toogle){currenttool = Rectangle_type;update();}
     else {currenttool = None;}
 }
 void Canvas::setCircleMode(){currenttool = Circle_type;update();}
@@ -30,6 +31,13 @@ void Canvas::mousePressEvent(QMouseEvent *event){
 
     pressPoint = event->pos();
     lastPoint = pressPoint;
+    if (current && current->supportResize()){
+        activehandle = current->hitHandle(event->pos());
+        if(activehandle  != None_handle){
+            resizing = true;
+            oldGeom = current->get_geometry();
+        }
+    }
     drawing = false;
     dragging = false;
     // current = create_shape(currenttool, pressPoint);
@@ -39,7 +47,42 @@ void Canvas::mouseMoveEvent (QMouseEvent *event){
     if (!(event->buttons() & Qt::LeftButton)) return;
     if ((event->pos() - pressPoint).manhattanLength() < drag_threshold) return; //checking for dragging
     dragging = true;
-    if(currenttool == None && current){             //if no tool selected then move if current is not nullptr
+    if (resizing && current){
+        Geometry g = oldGeom;
+        switch (activehandle){
+            case BottomRight:
+                g.width = event->pos().x() - g.x;
+                g.height = event->pos().y() - g.y;
+                break;
+            case TopLeft:{
+                float right  = g.x + g.width;
+                float bottom = g.y + g.height;
+                g.x = right;
+                g.y = bottom;
+                g.width  = event->pos().x() - g.x;
+                g.height = event->pos().y() - g.y;
+                break;
+            }
+            case TopRight:{
+                float bottom = g.y + g.height;
+                g.y = bottom;
+                g.width = event->pos().x() - g.x;
+                g.height = event->pos().y() - g.y;
+                break;
+            }
+            case BottomLeft:{
+                float right = g.x + g.width;
+                g.x = right;
+                g.width = event->pos().x() - g.x;
+                g.height = event->pos().y() - g.y;
+                break;
+            }
+            default: break;
+        }
+        current -> set_geometry(g);
+        update();
+    }
+    else if(currenttool == None && current){             //if no tool selected then move if current is not nullptr
         QPoint delta = event->pos() - lastPoint;
         current->move(delta.x(), delta.y());
         lastPoint = event->pos();
@@ -58,7 +101,12 @@ void Canvas::mouseMoveEvent (QMouseEvent *event){
 }
 void Canvas::mouseReleaseEvent (QMouseEvent *event){
     if (event->button() != Qt::LeftButton) return;
-    if (dragging && !drawing){
+    if (resizing){
+        newGeom = current->get_geometry();
+        current->set_geometry(oldGeom);
+        executeCommand(new ResizeCommand(current, oldGeom, newGeom));
+    }
+    else if (dragging && !drawing){
         float delx = event->pos().x() - pressPoint.x();
         float dely = event->pos().y() - pressPoint.y();
         current->move(-delx, -dely);
@@ -78,6 +126,7 @@ void Canvas::mouseReleaseEvent (QMouseEvent *event){
     update();
     drawing = false;
     dragging = false;
+    resizing = false;
     lastPoint = event->pos();
 }
 void Canvas::paintEvent(QPaintEvent*){

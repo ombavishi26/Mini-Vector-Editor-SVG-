@@ -39,5 +39,7 @@ public:
     //cloning circle
     GraphicsObject* clone() const override {return new Circle(*this);}
     GraphicsObject* clone(const float x, const float y) const override;
-
+    //get set geom
+    Geometry get_geometry() const override;
+    void set_geometry(const Geometry& g) override;
 };

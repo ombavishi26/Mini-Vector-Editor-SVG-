@@ -43,4 +43,7 @@ public:
     //cloning rect
     GraphicsObject* clone() const override {return new Rect(*this);}
     GraphicsObject* clone(const float x, const float y) const override;
+    //get set geometry 
+    Geometry get_geometry() const override;
+    void set_geometry(const Geometry& g) override;
 };

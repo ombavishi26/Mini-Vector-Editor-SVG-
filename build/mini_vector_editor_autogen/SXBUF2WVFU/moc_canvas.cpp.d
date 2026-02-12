@@ -17,6 +17,7 @@
   /home/om/main/COP290/mini_vector_editor/src/commands/CutCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/MoveCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/PasteCommand.h \
+  /home/om/main/COP290/mini_vector_editor/src/commands/ResizeCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserSvg.h \
   /home/om/main/COP290/mini_vector_editor/src/io/SvgSaver.h \
   /usr/include/alloca.h \

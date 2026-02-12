@@ -29,4 +29,6 @@ public:
     
     //to _svg return  a string in svg formate
     std::string to_svg() const override;
+
+    bool supportResize() const override {return false;}
 };

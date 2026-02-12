@@ -281,6 +281,12 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/ResizeCommand.h",
+			"MU",
+			"6JCNSNR7WH/moc_ResizeCommand.cpp",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserSvg.h",
 			"MU",
 			"2A6OOK6OSA/moc_ParserSvg.cpp",
@@ -436,6 +442,11 @@
 		],
 		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/PasteCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/ResizeCommand.cpp",
 			"MU",
 			null
 		],

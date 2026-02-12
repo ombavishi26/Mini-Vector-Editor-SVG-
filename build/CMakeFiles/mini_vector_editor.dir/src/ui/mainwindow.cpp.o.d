@@ -386,6 +386,7 @@ CMakeFiles/mini_vector_editor.dir/src/ui/mainwindow.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/CutCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/PasteCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/ChangeCornerRadiusCommand.h \
+ /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/ResizeCommand.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \

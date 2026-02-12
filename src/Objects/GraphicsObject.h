@@ -4,6 +4,11 @@
 #include "config/Default.h"
 #include <QPainter>
 
+enum HandleType {None_handle, TopLeft, TopRight, BottomLeft, BottomRight};
+struct Geometry {
+    float x, y, width, height;
+};
+
 class GraphicsObject {
 private:
     std::string stroke;
@@ -41,6 +46,12 @@ public:
     //move object
     virtual void move(const float del_x, const float del_y) {};
     //cloning object
-    virtual GraphicsObject* clone() const{return new GraphicsObject(*this);};
-    virtual GraphicsObject* clone(const float new_x, const float new_y) const{return new GraphicsObject(*this);}
+    virtual GraphicsObject* clone() const {};
+    virtual GraphicsObject* clone(const float new_x, const float new_y) const {};
+    //get and set geometry
+    virtual Geometry get_geometry() const {};
+    virtual void set_geometry(const Geometry& g) {};
+    //getting point on bounding rect
+    virtual HandleType hitHandle(const QPoint& p) const;
+    virtual bool supportResize() const {return true;}
 };

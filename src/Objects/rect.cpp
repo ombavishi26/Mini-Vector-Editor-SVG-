@@ -94,6 +94,16 @@ GraphicsObject* Rect::clone(const float nx, const float ny) const {
     return new Rect(width, height, nx, ny, rx, ry, obj::get_stroke(), obj::get_fill(), obj::get_strokewidth());
 }
 
+Geometry Rect::get_geometry() const {
+    Geometry g;
+    g.x=x; g.y=y; g.height=height; g.width= width;
+    return g;
+}
+
+void Rect::set_geometry(const Geometry& g){
+    x=g.x; y=g.y; width=g.width; height=g.height;
+}
+
 // int main (){
 //     rect defaultrect;
 //     rect rec(12,11,2,3,4,5,"red","orange");

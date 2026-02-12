@@ -13,13 +13,15 @@
 #include "../commands/CutCommand.h"
 #include "../commands/PasteCommand.h"
 #include "../commands/ChangeCornerRadiusCommand.h"
+#include "../commands/ResizeCommand.h"
 // #include <QPainter>
 
 class Canvas : public QWidget {
 private:
     Q_OBJECT
-    enum ToolType {None, Rectangle , Circle_type, Line};
+    enum ToolType {None, Rectangle_type , Circle_type, Line_type};
     ToolType currenttool;
+    HandleType activehandle;
     std::vector<GraphicsObject*> objects;
     std::vector<GraphicsObject*> clipboard;
     GraphicsObject* selected;
@@ -29,6 +31,9 @@ private:
     bool dragging;
     bool drawing;
     bool moving;
+    bool resizing;
+    Geometry oldGeom;
+    Geometry newGeom;
     QPoint lastPoint;
     QPoint startPoint;
     QPoint endPoint;

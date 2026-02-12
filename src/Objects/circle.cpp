@@ -75,6 +75,39 @@ GraphicsObject* Circle::clone(const float nx, const float ny) const {
     return new Circle(r, nx, ny, obj::get_stroke(), obj::get_fill(), obj::get_strokewidth());
 }
 
+Geometry Circle::get_geometry() const {
+    Geometry g;
+    g.x=cx-r; g.y=cy-r; g.width=2*r; g.height= 2*r;
+    return g;
+}
+
+// void Circle::set_geometry(const Geometry& g){
+//     r = std::min(abs(g.width),abs(g.height))/2.0f;
+//     if(g.height > 0) cy = g.y + r;
+//     else cy = g.y - r;
+//     if (g.width > 0) cx = g.x +r;
+//     else cx = g.x - r;
+// }
+void Circle::set_geometry(const Geometry& g)
+{
+    float left   = std::min(g.x, g.x + g.width);
+    float right  = std::max(g.x, g.x + g.width);
+    float top    = std::min(g.y, g.y + g.height);
+    float bottom = std::max(g.y, g.y + g.height);
+
+    float size = std::min(right - left, bottom - top);
+
+    // Important: preserve correct anchor
+    if (g.width < 0)
+        left = right - size;
+
+    if (g.height < 0)
+        top = bottom - size;
+
+    r = size / 2.0f;
+    cx = left + r;
+    cy = top + r;
+}
 // int main(){
 //     Circle defuaktCircle;
 //     Circle cir(15.0,50.0,100.0,"red","none",2.0);

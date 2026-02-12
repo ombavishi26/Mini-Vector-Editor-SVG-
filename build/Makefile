@@ -539,6 +539,30 @@ src/commands/PasteCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/PasteCommand.cpp.s
 .PHONY : src/commands/PasteCommand.cpp.s
 
+src/commands/ResizeCommand.o: src/commands/ResizeCommand.cpp.o
+.PHONY : src/commands/ResizeCommand.o
+
+# target to build an object file
+src/commands/ResizeCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ResizeCommand.cpp.o
+.PHONY : src/commands/ResizeCommand.cpp.o
+
+src/commands/ResizeCommand.i: src/commands/ResizeCommand.cpp.i
+.PHONY : src/commands/ResizeCommand.i
+
+# target to preprocess a source file
+src/commands/ResizeCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ResizeCommand.cpp.i
+.PHONY : src/commands/ResizeCommand.cpp.i
+
+src/commands/ResizeCommand.s: src/commands/ResizeCommand.cpp.s
+.PHONY : src/commands/ResizeCommand.s
+
+# target to generate assembly for a file
+src/commands/ResizeCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ResizeCommand.cpp.s
+.PHONY : src/commands/ResizeCommand.cpp.s
+
 src/io/Parser/ParserCircle.o: src/io/Parser/ParserCircle.cpp.o
 .PHONY : src/io/Parser/ParserCircle.o
 
@@ -862,6 +886,9 @@ help:
 	@echo "... src/commands/PasteCommand.o"
 	@echo "... src/commands/PasteCommand.i"
 	@echo "... src/commands/PasteCommand.s"
+	@echo "... src/commands/ResizeCommand.o"
+	@echo "... src/commands/ResizeCommand.i"
+	@echo "... src/commands/ResizeCommand.s"
 	@echo "... src/io/Parser/ParserCircle.o"
 	@echo "... src/io/Parser/ParserCircle.i"
 	@echo "... src/io/Parser/ParserCircle.s"

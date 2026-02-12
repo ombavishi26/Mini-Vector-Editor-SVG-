@@ -40,6 +40,22 @@ QRect obj::bounding_rect() const {return QRect();}
 //to svg
 std::string obj::to_svg() const {return "we are in Graphicsobject";};
 
+//getting point for resize
+HandleType GraphicsObject::hitHandle(const QPoint& p) const {
+    Geometry g = get_geometry();
+    const int size = 5;
+    QRectF tl(g.x - size, g.y - size, size*2, size*2);
+    QRectF tr(g.x + g.width - size, g.y - size, size*2, size*2);
+    QRectF bl(g.x - size, g.y + g.height - size, size*2, size*2);
+    QRectF br(g.x + g.width - size, g.y + g.height - size, size*2, size*2);
+
+    if (tl.contains(p)) return TopLeft;
+    if (tr.contains(p)) return TopRight;
+    if (bl.contains(p)) return BottomLeft;
+    if (br.contains(p)) return BottomRight;
+
+    return None_handle;
+}
 // int main() {
 //     GraphicsObject defaultObj;
 //     defaultObj.set_fill("om");
