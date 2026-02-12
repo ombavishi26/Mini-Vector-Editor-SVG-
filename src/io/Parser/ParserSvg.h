@@ -19,7 +19,7 @@ private:
     //parsing rec line of syntax 
     Rect* parser_rect(const std::string& input,int pos, int i);
     //parsing circle line and return pointer of ciircle
-    circle* parser_circle(const std::string& input, int pos, int i);
+    Circle* parser_circle(const std::string& input, int pos, int i);
     //parsing line and return pointer of line
     line* parser_line (const std::string& input , int pos, int i);
     //parsing path and return pointer of path

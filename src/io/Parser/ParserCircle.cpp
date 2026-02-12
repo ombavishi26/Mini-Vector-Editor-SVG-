@@ -1,11 +1,11 @@
 #include "ParserSvg.h"
-// using objcir = GraphicsObject::circle;
+// using objcir = GraphicsObject::Circle;
 
-//parsing circle line of svg syntax
-circle* ParserSvg::parser_circle(const std::string& input ,int pos,int i){
+//parsing Circle line of svg syntax
+Circle* ParserSvg::parser_circle(const std::string& input ,int pos,int i){
     std::vector<std::pair<std::string,std::string>> properties;
     properties = seperate (input,pos); 
-    circle* cir = new circle();
+    Circle* cir = new Circle();
     for(const auto& attribute : properties){
         if (attribute.first == "r"){
             cir->set_r(std::stof(attribute.second));

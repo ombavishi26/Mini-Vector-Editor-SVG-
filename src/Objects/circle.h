@@ -1,19 +1,19 @@
 #pragma once
 #include "GraphicsObject.h"
 // namespace def = Default;
-// namespace defcircle = Default::circle;
+// namespace defCircle = Default::Circle;
 
-class circle : public GraphicsObject {
+class Circle : public GraphicsObject {
 private:
     float r,cx,cy;
 
 public:
     //constructor
-    circle();
-    circle(const float r, const float cx, const float cy, const std::string& stroke = Default::stroke, const std::string& fill = Default::fill, const float sw = Default::strokewidth);
+    Circle();
+    Circle(const float r, const float cx, const float cy, const std::string& stroke = Default::stroke, const std::string& fill = Default::fill, const float sw = Default::strokewidth);
 
     //destructor
-    ~circle() override;
+    ~Circle() override;
 
     //print properties
     void print_properties() const override;
@@ -25,4 +25,19 @@ public:
     
     //to svg
     std::string to_svg() const override;
+
+    //draw Circle
+    void draw(QPainter& painter) const override;
+    //update width and height while forming
+    void update_drag(const QPoint& start, const QPoint& end) override;
+    //bounding circle
+    QRect bounding_rect() const override;
+    //inside of circle
+    bool inside(const QPoint& point) const override;
+    //move circle
+    void move(const float del_x, const float del_y) override;
+    //cloning circle
+    GraphicsObject* clone() const override {return new Circle(*this);}
+    GraphicsObject* clone(const float x, const float y) const override;
+
 };
