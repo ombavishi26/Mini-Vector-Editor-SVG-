@@ -25,7 +25,7 @@ void Circle::set_cy(const float cy){this->cy = cy;}
 
 //to svg return the svg syntax for Circle
 std::string Circle::to_svg() const{
-    std::string str = "<Circle ";
+    std::string str = "<circle ";
     if (r != defCircle::r){
         str += "r=\"" +  std::to_string(r) + "\" ";
     }

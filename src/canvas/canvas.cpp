@@ -127,6 +127,7 @@ void Canvas::newFile() {
 
 void Canvas::openFile(const std::string& filename){
     current = nullptr;
+    currentfile = filename;
     clearHistory();
     ParserSvg parser;
     for (GraphicsObject* obj : objects) {
