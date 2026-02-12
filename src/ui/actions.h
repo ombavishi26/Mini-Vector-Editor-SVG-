@@ -31,6 +31,8 @@ private:
     //undo redo 
     QAction* undoAction;
     QAction* redoAction;
+    //rx,ry
+    QAction* cornerRadiusAction;
     //functions for connect 
     void onNewAction();
     void onSaveAction();
@@ -48,6 +50,8 @@ private:
     //undo redo
     void onUndoAction();
     void onRedoAction();
+    //rx,ry
+    void onCornerRadiusAction();
 
 public:
     explicit Actions(MainWindow* w, Canvas* c);

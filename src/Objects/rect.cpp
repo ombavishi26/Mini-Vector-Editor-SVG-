@@ -94,8 +94,6 @@ GraphicsObject* Rect::clone(const float nx, const float ny) const {
     return new Rect(width, height, nx, ny, rx, ry, obj::get_stroke(), obj::get_fill(), obj::get_strokewidth());
 }
 
-//set position
-void Rect::set_position(float nx, float ny){set_x(nx);set_y(ny);}
 // int main (){
 //     rect defaultrect;
 //     rect rec(12,11,2,3,4,5,"red","orange");

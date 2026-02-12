@@ -395,6 +395,7 @@ CMakeFiles/mini_vector_editor.dir/src/ui/actions.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/ChangeSwCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/CutCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/PasteCommand.h \
+ /home/om/main/COP290/mini_vector_editor/src/ui/../canvas/../commands/ChangeCornerRadiusCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/ui/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \

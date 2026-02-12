@@ -154,5 +154,11 @@
   "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/src/commands/PasteCommand.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/commands/PasteCommand.cpp",
   "file": "/home/om/main/COP290/mini_vector_editor/src/commands/PasteCommand.cpp",
   "output": "CMakeFiles/mini_vector_editor.dir/src/commands/PasteCommand.cpp.o"
+},
+{
+  "directory": "/home/om/main/COP290/mini_vector_editor/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/include -I/home/om/main/COP290/mini_vector_editor/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/mini_vector_editor.dir/src/commands/ChangeCornerRadiusCommand.cpp.o -c /home/om/main/COP290/mini_vector_editor/src/commands/ChangeCornerRadiusCommand.cpp",
+  "file": "/home/om/main/COP290/mini_vector_editor/src/commands/ChangeCornerRadiusCommand.cpp",
+  "output": "CMakeFiles/mini_vector_editor.dir/src/commands/ChangeCornerRadiusCommand.cpp.o"
 }
 ]

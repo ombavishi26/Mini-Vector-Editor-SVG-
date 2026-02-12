@@ -156,7 +156,6 @@ void Canvas::cut(){
     executeCommand(new CutCommand(objects, current));
     current = nullptr;
     update();
-    
 }
 
 void Canvas::copy(){
@@ -211,4 +210,11 @@ void Canvas::clearHistory(){
     for(auto c : redoStack)
         delete c;
     redoStack.clear();
+}
+
+void Canvas::setCornerRadius(float rx, float ry){
+    if(!current) return;
+    Rect* rec = dynamic_cast<Rect*> (current);
+    if(!rec) return;
+    executeCommand(new ChangeCornerRadiusCommand(rec,rec->get_rx(),rec->get_ry(),rx,ry));
 }

@@ -51,6 +51,10 @@ void Actions::createMenus(QMenuBar* menuBar) {
     redoAction = new QAction("Redo",this);
     menuBar -> addAction(redoAction);
     connect(redoAction, &QAction::triggered, this, &Actions::onRedoAction);
+    //rx,ry
+    cornerRadiusAction = new QAction("Cr",this);
+    menuBar -> addAction(cornerRadiusAction);
+    connect(cornerRadiusAction, &QAction::triggered, this, &Actions::onCornerRadiusAction);
 }
 
 void Actions::createToolBar(QToolBar* toolBar) {
@@ -139,3 +143,13 @@ void Actions::onStrokeWidthAction() {
 //unod redo
 void Actions::onUndoAction(){canvas -> undo();}
 void Actions::onRedoAction(){canvas -> redo();}
+
+//corner radius
+void Actions::onCornerRadiusAction(){
+    bool ok;
+    float rx = QInputDialog::getDouble(mainwindow,"Corner Radius:","Enter x:",0,0,200,1,&ok);
+    if (!ok) return;
+    float ry = QInputDialog::getDouble(mainwindow,"Corner Radius:","Enter y:",0,0,200,1,&ok);
+    if (!ok) return;
+    canvas->setCornerRadius(rx, ry);
+}

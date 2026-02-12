@@ -239,6 +239,12 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/ChangeCornerRadiusCommand.h",
+			"MU",
+			"6JCNSNR7WH/moc_ChangeCornerRadiusCommand.cpp",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/ChangeFillCommand.h",
 			"MU",
 			"6JCNSNR7WH/moc_ChangeFillCommand.cpp",
@@ -395,6 +401,11 @@
 		],
 		[
 			"/home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/om/main/COP290/mini_vector_editor/src/commands/ChangeCornerRadiusCommand.cpp",
 			"MU",
 			null
 		],

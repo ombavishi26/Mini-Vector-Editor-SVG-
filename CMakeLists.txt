@@ -37,6 +37,7 @@ add_executable(mini_vector_editor
     src/commands/ChangeSwCommand.cpp
     src/commands/CutCommand.cpp
     src/commands/PasteCommand.cpp
+    src/commands/ChangeCornerRadiusCommand.cpp
 )
 
 target_include_directories(mini_vector_editor PRIVATE src)

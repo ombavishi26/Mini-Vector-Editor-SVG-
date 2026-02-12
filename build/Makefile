@@ -371,6 +371,30 @@ src/commands/AddObjectCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/AddObjectCommand.cpp.s
 .PHONY : src/commands/AddObjectCommand.cpp.s
 
+src/commands/ChangeCornerRadiusCommand.o: src/commands/ChangeCornerRadiusCommand.cpp.o
+.PHONY : src/commands/ChangeCornerRadiusCommand.o
+
+# target to build an object file
+src/commands/ChangeCornerRadiusCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeCornerRadiusCommand.cpp.o
+.PHONY : src/commands/ChangeCornerRadiusCommand.cpp.o
+
+src/commands/ChangeCornerRadiusCommand.i: src/commands/ChangeCornerRadiusCommand.cpp.i
+.PHONY : src/commands/ChangeCornerRadiusCommand.i
+
+# target to preprocess a source file
+src/commands/ChangeCornerRadiusCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeCornerRadiusCommand.cpp.i
+.PHONY : src/commands/ChangeCornerRadiusCommand.cpp.i
+
+src/commands/ChangeCornerRadiusCommand.s: src/commands/ChangeCornerRadiusCommand.cpp.s
+.PHONY : src/commands/ChangeCornerRadiusCommand.s
+
+# target to generate assembly for a file
+src/commands/ChangeCornerRadiusCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/commands/ChangeCornerRadiusCommand.cpp.s
+.PHONY : src/commands/ChangeCornerRadiusCommand.cpp.s
+
 src/commands/ChangeFillCommand.o: src/commands/ChangeFillCommand.cpp.o
 .PHONY : src/commands/ChangeFillCommand.o
 
@@ -817,6 +841,9 @@ help:
 	@echo "... src/commands/AddObjectCommand.o"
 	@echo "... src/commands/AddObjectCommand.i"
 	@echo "... src/commands/AddObjectCommand.s"
+	@echo "... src/commands/ChangeCornerRadiusCommand.o"
+	@echo "... src/commands/ChangeCornerRadiusCommand.i"
+	@echo "... src/commands/ChangeCornerRadiusCommand.s"
 	@echo "... src/commands/ChangeFillCommand.o"
 	@echo "... src/commands/ChangeFillCommand.i"
 	@echo "... src/commands/ChangeFillCommand.s"

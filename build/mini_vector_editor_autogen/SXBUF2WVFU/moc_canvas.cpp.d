@@ -9,6 +9,7 @@
   /home/om/main/COP290/mini_vector_editor/src/Objects/rect.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/text.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.h \
+  /home/om/main/COP290/mini_vector_editor/src/commands/ChangeCornerRadiusCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/ChangeFillCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/ChangeSwCommand.h \

@@ -43,6 +43,4 @@ public:
     //cloning rect
     GraphicsObject* clone() const override {return new Rect(*this);}
     GraphicsObject* clone(const float x, const float y) const override;
-    //sset position
-    void set_position(float nx, float ny) override ;
 };

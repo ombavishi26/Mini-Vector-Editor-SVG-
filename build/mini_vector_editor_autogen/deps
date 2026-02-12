@@ -22,6 +22,8 @@ mini_vector_editor_autogen/timestamp: \
 	/home/om/main/COP290/mini_vector_editor/src/canvas/canvas.h \
 	/home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.h \
+	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeCornerRadiusCommand.cpp \
+	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeCornerRadiusCommand.h \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeFillCommand.cpp \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeFillCommand.h \
 	/home/om/main/COP290/mini_vector_editor/src/commands/ChangeStrokeCommand.cpp \

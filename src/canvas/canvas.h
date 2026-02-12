@@ -12,6 +12,7 @@
 #include "../commands/ChangeSwCommand.h"
 #include "../commands/CutCommand.h"
 #include "../commands/PasteCommand.h"
+#include "../commands/ChangeCornerRadiusCommand.h"
 // #include <QPainter>
 
 class Canvas : public QWidget {
@@ -67,4 +68,6 @@ public:
     //unod redo 
     void undo();
     void redo();
+    //set rx,ry in rect
+    void setCornerRadius(const float rx, const float ry);
 };
