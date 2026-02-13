@@ -1,22 +1,17 @@
 #include "ParserSvg.h"
 
 //parsing text Line of svg 
-text* ParserSvg::parser_text(const std::string& input ,int pos,int i){
+Text* ParserSvg::parser_text(const std::string& input ,int pos,int i){
     std::vector<std::pair<std::string,std::string>> properties;
     properties = seperate_text(input,pos); 
-    text* t = new text();
+    Text* t = new Text();
+    std::cout << "parsing start";
     for(const auto& attribute : properties){
         if (attribute.first == "x"){
             t->set_x(std::stof(attribute.second));
         }
         else if (attribute.first == "y"){
             t->set_y(std::stof(attribute.second));
-        }
-        else if (attribute.first == "dx"){
-            t->set_dx(std::stof(attribute.second));
-        }
-        else if (attribute.first == "dy"){
-            t->set_dy(std::stof(attribute.second));
         }
         else if (attribute.first == "rotate"){
             t->set_rotate(std::stof(attribute.second));

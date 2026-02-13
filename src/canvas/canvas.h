@@ -19,7 +19,7 @@
 class Canvas : public QWidget {
 private:
     Q_OBJECT
-    enum ToolType {None, Rectangle_type , Circle_type, Line_type, Hexagon_type};
+    enum ToolType {None, Rectangle_type , Circle_type, Line_type, Hexagon_type, Polyline_type};
     ToolType currenttool;
     HandleType activehandle;
     std::vector<GraphicsObject*> objects;
@@ -60,6 +60,7 @@ public:
     void setCircleMode();
     void setHexagonMode();
     void setLineMode();
+    void addText(const std::string& text);
     //style objects
     void setStrokeWidth(float w);
     void setFillColor(const std::string& color);
@@ -78,4 +79,5 @@ public:
     void redo();
     //set rx,ry in rect
     void setCornerRadius(const float rx, const float ry);
+    void setFontSize(const int si);
 };

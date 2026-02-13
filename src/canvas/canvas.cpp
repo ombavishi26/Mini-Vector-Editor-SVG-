@@ -27,6 +27,16 @@ void Canvas::setCircleMode(){currenttool = Circle_type;update();}
 void Canvas::setLineMode(){currenttool = Line_type; update();}
 void Canvas::setHexagonMode(){currenttool = Hexagon_type;update();}
 
+void Canvas::addText(const std::string& tex){
+    current = new Text(lastPoint.x(),lastPoint.y(),0,12,tex,"black","none",1);
+    executeCommand(new AddObjectCommand(objects,current));
+}
+void Canvas::setFontSize(const int si){
+    if(!current) return;
+    Text* t = dynamic_cast<Text*>(current);
+    if(t){ t->set_font_size(si); update();}
+}
+
 void Canvas::mousePressEvent(QMouseEvent *event){
     if (event->button() != Qt::LeftButton) return;
 
@@ -184,7 +194,9 @@ void Canvas::openFile(const std::string& filename){
         delete obj;
     }
     objects.clear();
+    std::cout << "open";
     objects = parser.load_svg(filename);
+    std::cout << "parserloaded";
     update();
 }
 
@@ -271,3 +283,4 @@ void Canvas::setCornerRadius(float rx, float ry){
     if(!rec) return;
     executeCommand(new ChangeCornerRadiusCommand(rec,rec->get_rx(),rec->get_ry(),rx,ry));
 }
+

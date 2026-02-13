@@ -5,6 +5,7 @@
 #include <fstream>
 #include <algorithm>
 #include <cstdlib>
+#include <sstream>
 
 class ParserSvg {
 private:
@@ -27,7 +28,9 @@ private:
     //parsing path and return pointer of path
     path* parser_path (const std::string& input , int pos, int i);
     //parsing text and return pointer of text
-    text* parser_text (const std::string& input , int pos, int i);
+    Text* parser_text (const std::string& input , int pos, int i);
+    //parsing polyline
+    Polyline* parser_polyline(const std::string& input, int pos, int i);
 
 public:
     //loadinf file and returning vector of GraphicsObject pointers

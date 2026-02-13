@@ -221,6 +221,12 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/Objects/polyline.h",
+			"MU",
+			"K5NJJAZKPP/moc_polyline.cpp",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/Objects/rect.h",
 			"MU",
 			"K5NJJAZKPP/moc_rect.cpp",
@@ -402,6 +408,11 @@
 			null
 		],
 		[
+			"/home/om/main/COP290/mini_vector_editor/src/Objects/polyline.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/om/main/COP290/mini_vector_editor/src/Objects/rect.cpp",
 			"MU",
 			null
@@ -478,6 +489,11 @@
 		],
 		[
 			"/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserPath.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/om/main/COP290/mini_vector_editor/src/io/Parser/ParserPolyline.cpp",
 			"MU",
 			null
 		],

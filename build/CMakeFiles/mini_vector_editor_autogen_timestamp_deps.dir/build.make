@@ -66,8 +66,8 @@ include CMakeFiles/mini_vector_editor_autogen_timestamp_deps.dir/compiler_depend
 # Include the progress variables for this target.
 include CMakeFiles/mini_vector_editor_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/mini_vector_editor_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/mini_vector_editor_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/mini_vector_editor_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/mini_vector_editor_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 
 mini_vector_editor_autogen_timestamp_deps: CMakeFiles/mini_vector_editor_autogen_timestamp_deps

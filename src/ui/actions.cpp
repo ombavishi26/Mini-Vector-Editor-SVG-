@@ -55,6 +55,10 @@ void Actions::createMenus(QMenuBar* menuBar) {
     cornerRadiusAction = new QAction("Cr",this);
     menuBar -> addAction(cornerRadiusAction);
     connect(cornerRadiusAction, &QAction::triggered, this, &Actions::onCornerRadiusAction);
+    //font rotate 
+    fontAction = new QAction("Font size",this);
+    menuBar -> addAction(fontAction);
+    connect(fontAction, &QAction::triggered, this, &Actions::onFontAction);
 }
 
 void Actions::createToolBar(QToolBar* toolBar) {
@@ -75,6 +79,10 @@ void Actions::createToolBar(QToolBar* toolBar) {
     lineAction = new QAction("Line",this);
     connect(lineAction, &QAction::triggered, canvas, &Canvas::setLineMode);
     toolBar->addAction(lineAction);
+    //text
+    textAction = new QAction("Text",this);
+    connect(textAction, &QAction::triggered, this, &Actions::onTextAction);
+    toolBar->addAction(textAction);
     //action for fill
     fillAction = new QAction("Fill", this);
     toolBar -> addAction(fillAction);
@@ -163,4 +171,18 @@ void Actions::onCornerRadiusAction(){
     float ry = QInputDialog::getDouble(mainwindow,"Corner Radius:","Enter y:",0,0,200,1,&ok);
     if (!ok) return;
     canvas->setCornerRadius(rx, ry);
+}
+
+//text
+void Actions::onTextAction(){
+    bool ok = false;
+    QString text = QInputDialog::getText(mainwindow, "Add Text", "Enter text:", QLineEdit::Normal, "", &ok);
+    if(ok && !text.isEmpty()){canvas->addText(text.toStdString());}
+}
+
+void Actions::onFontAction(){
+    bool ok;
+    float si = QInputDialog::getDouble(mainwindow,"Corner Radius:","Enter x:",0,0,200,0,&ok);
+    if (!ok) return;
+    canvas->setFontSize(si); 
 }

@@ -359,6 +359,7 @@ CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/line.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/path.h \
+ /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/polyline.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../Objects/text.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../io/SvgSaver.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
@@ -366,6 +367,7 @@ CMakeFiles/mini_vector_editor.dir/src/canvas/canvas.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../io/Parser/ParserSvg.h \
+ /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../commands/Command.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../commands/AddObjectCommand.h \
  /home/om/main/COP290/mini_vector_editor/src/canvas/../commands/MoveCommand.h \

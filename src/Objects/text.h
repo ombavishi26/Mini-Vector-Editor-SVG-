@@ -1,19 +1,19 @@
 #pragma once
 #include "GraphicsObject.h"
 
-class text : public GraphicsObject {
+class Text : public GraphicsObject {
 private:
-    float x,y,dx,dy,rotate;
+    float x,y,rotate;
     int font_size;
     std::string content;    
 
 public:
     //constructor 
-    text();
-    text(const float x,const float y,const float dx,const float dy,const float rotate, const int font_size, const std::string& content,const std::string& stroke,const std::string& fill, const float sw);
+    Text();
+    Text(const float x,const float y,const float rotate,const int font_size,const std::string& content,const std::string& stroke,const std::string& fill, const float sw);
 
     //destructor
-    ~text() override;
+    ~Text() override;
 
     //print properties
     void print_properties() const override;
@@ -21,8 +21,6 @@ public:
     //setter
     void set_x(const float x);
     void set_y(const float y);
-    void set_dx(const float dx);
-    void set_dy(const float dy);
     void set_rotate(const float rotate);
     void set_font_size(const int font_size);
     void set_content(const std::string& content);
@@ -31,4 +29,21 @@ public:
     std::string to_svg() const override;
 
     bool supportResize() const override {return false;}
+
+    //draw Text
+    void draw(QPainter& painter) const override;
+    //update width and height while forming
+    // void update_drag(const QPoint& start, const QPoint& end) override;
+    //bounding Text
+    QRect bounding_rect() const override;
+    //inside of Text
+    bool inside(const QPoint& point) const override;
+    //move Text
+    void move(const float del_x, const float del_y) override;
+    //cloning Text
+    GraphicsObject* clone() const override {return new Text(*this);}
+    GraphicsObject* clone(const float x, const float y) const override;
+    //get set geom
+    Geometry get_geometry() const override;
+    void set_geometry(const Geometry& g) override;
 };

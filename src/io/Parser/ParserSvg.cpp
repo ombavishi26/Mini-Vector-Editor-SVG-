@@ -37,7 +37,7 @@ std::vector<GraphicsObject*> ParserSvg::load_svg (const std::string& filename){
     //do something till line is not last line ehich is </svg>
     std::getline(file,line);  //to next line
     err_index +=1;
-    while (line != "</svg>"){
+    while (line.find("</svg>") == std::string::npos){
         
         if(line.at(0) != '<'){
             std::cerr << "Error at line " << err_index << ": line musst start with '<' ";
@@ -55,11 +55,14 @@ std::vector<GraphicsObject*> ParserSvg::load_svg (const std::string& filename){
         else if (obj_type == "line"){
             objects.push_back(parser_line(line,pos_s+1,err_index));
         }
-        if (obj_type == "hexagon"){
+        else if (obj_type == "hexagon"){
             objects.push_back(parser_hexagon(line,pos_s+1,err_index));
         }
         else if (obj_type == "path"){
             objects.push_back(parser_path(line,pos_s+1,err_index));
+        }
+        else if (obj_type == "polyline"){
+            objects.push_back(parser_polyline(line,pos_s+1,err_index));
         }
         else if (obj_type == "text"){
             // seperate_text(line,pos_s+1);

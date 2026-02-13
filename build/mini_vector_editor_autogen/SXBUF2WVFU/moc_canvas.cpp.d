@@ -7,6 +7,7 @@
   /home/om/main/COP290/mini_vector_editor/src/Objects/hexagon.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/line.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/path.h \
+  /home/om/main/COP290/mini_vector_editor/src/Objects/polyline.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/rect.h \
   /home/om/main/COP290/mini_vector_editor/src/Objects/text.h \
   /home/om/main/COP290/mini_vector_editor/src/commands/AddObjectCommand.h \
@@ -98,6 +99,7 @@
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
   /usr/include/c++/13/bits/std_mutex.h \
@@ -178,6 +180,7 @@
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \

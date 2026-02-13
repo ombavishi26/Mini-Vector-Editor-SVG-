@@ -6,4 +6,5 @@
 #include "line.h"
 #include "hexagon.h"
 #include "path.h"
+#include "polyline.h"
 #include "text.h"

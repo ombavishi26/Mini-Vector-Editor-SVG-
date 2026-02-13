@@ -332,8 +332,10 @@ CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserSvg.cpp.o: \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/line.h \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/path.h \
+ /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/polyline.h \
  /home/om/main/COP290/mini_vector_editor/src/io/Parser/../../Objects/text.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc
+ /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc

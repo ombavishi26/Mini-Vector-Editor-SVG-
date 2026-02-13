@@ -32,9 +32,11 @@ private:
     QAction* circelAction;
     QAction* lineAction;
     QAction* hexagonAction;
+    QAction* textAction;
     //undo redo 
     QAction* undoAction;
     QAction* redoAction;
+    QAction* fontAction;
     //rx,ry
     QAction* cornerRadiusAction;
     //functions for connect 
@@ -56,6 +58,9 @@ private:
     void onRedoAction();
     //rx,ry
     void onCornerRadiusAction();
+    //text
+    void onTextAction();
+    void onFontAction();
 
 public:
     explicit Actions(MainWindow* w, Canvas* c);

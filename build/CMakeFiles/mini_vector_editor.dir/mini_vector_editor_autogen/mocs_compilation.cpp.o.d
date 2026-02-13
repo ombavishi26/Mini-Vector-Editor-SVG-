@@ -364,6 +364,7 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/line.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/hexagon.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/path.h \
+ /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/polyline.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../Objects/text.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../io/SvgSaver.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
@@ -371,6 +372,7 @@ CMakeFiles/mini_vector_editor.dir/mini_vector_editor_autogen/mocs_compilation.cp
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../io/Parser/ParserSvg.h \
+ /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../commands/Command.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../commands/AddObjectCommand.h \
  /home/om/main/COP290/mini_vector_editor/build/mini_vector_editor_autogen/SXBUF2WVFU/../../../src/canvas/../commands/MoveCommand.h \

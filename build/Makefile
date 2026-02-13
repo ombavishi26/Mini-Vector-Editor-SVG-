@@ -299,6 +299,30 @@ src/Objects/path.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/path.cpp.s
 .PHONY : src/Objects/path.cpp.s
 
+src/Objects/polyline.o: src/Objects/polyline.cpp.o
+.PHONY : src/Objects/polyline.o
+
+# target to build an object file
+src/Objects/polyline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/polyline.cpp.o
+.PHONY : src/Objects/polyline.cpp.o
+
+src/Objects/polyline.i: src/Objects/polyline.cpp.i
+.PHONY : src/Objects/polyline.i
+
+# target to preprocess a source file
+src/Objects/polyline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/polyline.cpp.i
+.PHONY : src/Objects/polyline.cpp.i
+
+src/Objects/polyline.s: src/Objects/polyline.cpp.s
+.PHONY : src/Objects/polyline.s
+
+# target to generate assembly for a file
+src/Objects/polyline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/Objects/polyline.cpp.s
+.PHONY : src/Objects/polyline.cpp.s
+
 src/Objects/rect.o: src/Objects/rect.cpp.o
 .PHONY : src/Objects/rect.o
 
@@ -683,6 +707,30 @@ src/io/Parser/ParserPath.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPath.cpp.s
 .PHONY : src/io/Parser/ParserPath.cpp.s
 
+src/io/Parser/ParserPolyline.o: src/io/Parser/ParserPolyline.cpp.o
+.PHONY : src/io/Parser/ParserPolyline.o
+
+# target to build an object file
+src/io/Parser/ParserPolyline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPolyline.cpp.o
+.PHONY : src/io/Parser/ParserPolyline.cpp.o
+
+src/io/Parser/ParserPolyline.i: src/io/Parser/ParserPolyline.cpp.i
+.PHONY : src/io/Parser/ParserPolyline.i
+
+# target to preprocess a source file
+src/io/Parser/ParserPolyline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPolyline.cpp.i
+.PHONY : src/io/Parser/ParserPolyline.cpp.i
+
+src/io/Parser/ParserPolyline.s: src/io/Parser/ParserPolyline.cpp.s
+.PHONY : src/io/Parser/ParserPolyline.s
+
+# target to generate assembly for a file
+src/io/Parser/ParserPolyline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_vector_editor.dir/build.make CMakeFiles/mini_vector_editor.dir/src/io/Parser/ParserPolyline.cpp.s
+.PHONY : src/io/Parser/ParserPolyline.cpp.s
+
 src/io/Parser/ParserRect.o: src/io/Parser/ParserRect.cpp.o
 .PHONY : src/io/Parser/ParserRect.o
 
@@ -904,6 +952,9 @@ help:
 	@echo "... src/Objects/path.o"
 	@echo "... src/Objects/path.i"
 	@echo "... src/Objects/path.s"
+	@echo "... src/Objects/polyline.o"
+	@echo "... src/Objects/polyline.i"
+	@echo "... src/Objects/polyline.s"
 	@echo "... src/Objects/rect.o"
 	@echo "... src/Objects/rect.i"
 	@echo "... src/Objects/rect.s"
@@ -952,6 +1003,9 @@ help:
 	@echo "... src/io/Parser/ParserPath.o"
 	@echo "... src/io/Parser/ParserPath.i"
 	@echo "... src/io/Parser/ParserPath.s"
+	@echo "... src/io/Parser/ParserPolyline.o"
+	@echo "... src/io/Parser/ParserPolyline.i"
+	@echo "... src/io/Parser/ParserPolyline.s"
 	@echo "... src/io/Parser/ParserRect.o"
 	@echo "... src/io/Parser/ParserRect.i"
 	@echo "... src/io/Parser/ParserRect.s"
